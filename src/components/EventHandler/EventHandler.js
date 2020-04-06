@@ -3,6 +3,7 @@ import events from "../Events/events.json"
 //import MainPage from "../Events/Events.js"
 import IndiEvents from "../IndiEvents/IndiEvents.js"
 
+
 class EventHandler extends Component{
     state={
         ShowIndiEvents: false,
