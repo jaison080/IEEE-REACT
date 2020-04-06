@@ -33,7 +33,7 @@ function IndiEvents(props){
                 </div>
            </div>
            <div className="row">
-               <div className="col l12">
+               <div className="col s12 m12 l12">
                
                <div style={{ "text-align": "center", "padding-bottom": "100px", "padding-right": "50px", "padding-left": "50px"}} className="heading">
                <p>{props.activeitem.description}</p>
