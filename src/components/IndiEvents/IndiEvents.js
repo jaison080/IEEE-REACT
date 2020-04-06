@@ -5,6 +5,18 @@ import 'materialize-css/dist/css/materialize.min.css';
 function IndiEvents(props){
    return(
        <div className="outer">
+
+            {/*<a class="btn-floating btn-large waves-effect waves-light red" style={{"position":"fixed", "bottom": "0", "right":"0"}}><i class="material-icons">chevron_left</i></a>*/}
+
+  <nav>
+    <div class="nav-wrapper" stye={{"background-color": "white"}}>
+      <div class="col s12">
+        <a onClick={props.closeHandler} style={{"cursor":"pointer"}} class="breadcrumb">Events</a>
+        <a  class="breadcrumb">{props.activeitem.title}</a>
+        </div>
+    </div>
+  </nav>
+            
            <div className="row">
                <div className="col l12">
                

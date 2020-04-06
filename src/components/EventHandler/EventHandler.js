@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import events from "../Events/events.json"
 //import MainPage from "../Events/Events.js"
 import IndiEvents from "../IndiEvents/IndiEvents.js"
+import 'materialize-css/dist/css/materialize.min.css';
 
 
 class EventHandler extends Component{
@@ -27,7 +28,7 @@ class EventHandler extends Component{
         });
       };
       closeToggleClickHandler= ()=>{
-        this.setState({ShowMainEvents: false}); 
+        this.setState({ShowIndiEvents: false}); 
       }
 
       renderItems=()=>{
@@ -52,7 +53,7 @@ class EventHandler extends Component{
                 <p>{item.date}</p>
               </div>
               <div class="card-action">
-                <a onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
+                <a class="waves-effect waves-teal btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
               </div>
             </div>
           </div>

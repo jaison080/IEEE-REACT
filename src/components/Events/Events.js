@@ -19,7 +19,7 @@ function Event(props) {
         <div class="col s12 m4">
           <div class="card small">
             <div class="card-image">
-              <img src={require("../main1.jpg")} />
+              <img class="responsive-img" src={require("../main1.jpg")} />
               <span class="card-title">{item.title}</span>
             </div>
             <div class="card-content">
