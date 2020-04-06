@@ -14,14 +14,15 @@ class EventHandler extends Component{
           location:"knowhere",
           img_src:"somesource",
           description:"ths is fnkn f ljisnlfblihbncilbncs" 
-        }
+        },
+        eventitems: events,
         
       }
       
       eventToggleClickHandler = (obj) =>{
-        this.setState({activeitem:obj})
+       // this.setState({activeitem:obj, ShowIndiEvents: !ShowIndiEvents})
         this.setState((prevState)=>{
-          return {ShowMainEvents: !prevState.ShowMainEvents}; 
+          return {ShowIndiEvents: !prevState.ShowIndiEvents,activeitem:obj}; 
         });
       };
       closeToggleClickHandler= ()=>{
@@ -34,7 +35,7 @@ class EventHandler extends Component{
             <div class="row">
       
               {
-                events.map((item, i) => <div key={events.id}>
+                this.state.eventitems.map((item, i) => <div key={events.id}>
       
                   <ul>
                     {
@@ -50,7 +51,7 @@ class EventHandler extends Component{
                 <p>{item.date}</p>
               </div>
               <div class="card-action">
-                <a onClick={this.eventToggleClickHandler(item)}>View Details</a>
+                <a onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
               </div>
             </div>
           </div>
@@ -75,7 +76,7 @@ class EventHandler extends Component{
         MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} activeitem={this.state.activeitem}/>
       }
       else{
-        MianEvents=this.renderItems();
+        MianEvents=<this.renderItems/>;
       }
       
       return (

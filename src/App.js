@@ -11,6 +11,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Footer from './components/Footer.js' 
 import Gallery from './components/Gallery.js'
 import NotFound from './components/NotFoundPage/NotFoundPage.js'
+import EventHandler from './components/EventHandler/EventHandler.js'
 // import Cred from './components/IEEE-credentials/credentials.js'
 class App extends Component {
   state={
@@ -45,7 +46,7 @@ class App extends Component {
     
     <Switch>
         <Route exact path="/" component={Landing}/>
-        <Route path="/events" component={Events}/>
+        <Route path="/events" component={EventHandler}/>
         <Route path="/execom" component={Execom}/>
         <Route path="/achievements" component={Achievements}/>    
         <Route path="/gallery" component={Gallery}/>

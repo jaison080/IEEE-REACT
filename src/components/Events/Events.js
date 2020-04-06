@@ -26,7 +26,7 @@ function Event(props) {
               <p>{item.date}</p>
             </div>
             <div class="card-action">
-              <a onClick={props.eventClickHandler(item)}>View Details</a>
+              <a>View Details</a>
             </div>
           </div>
         </div>
