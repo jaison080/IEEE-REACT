@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import events from "../Events/events.json"
+import events from "./events.json"
 //import MainPage from "../Events/Events.js"
 import IndiEvents from "../IndiEvents/IndiEvents.js"
 import 'materialize-css/dist/css/materialize.min.css';
@@ -37,23 +37,24 @@ class EventHandler extends Component{
             <div class="row">
       
               {
-                this.state.eventitems.map((item, i) => <div key={events.id}>
+                this.state.eventitems.map((item, i) => <div class="col s12 m4" key={events.id}>
       
                   <ul>
                     {
                     <li>
           
-          <div class="col s12 m4">
-            <div class="card small">
-              <div class="card-image">
-                <img src={require("../main1.jpg")} />
-                <span class="card-title">{item.title}</span>
+          <div>
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src={require('../EventImages/'+ item.img_src +'.jpg')} />
               </div>
-              <div class="card-content">
-                <p>{item.date}</p>
+              <div class="card-content">  
+                <span class="card-title activator grey-text text-darken-4">{item.title}<i class="material-icons right wave-effect">expand_less</i></span>
+                <a class="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
               </div>
-              <div class="card-action">
-                <a class="waves-effect waves-teal btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{item.title}<i class="material-icons right">expand_more</i></span>
+                <p class="truncate">{item.description}</p>
               </div>
             </div>
           </div>
