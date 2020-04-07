@@ -59,7 +59,7 @@ function Landing() {
     </div>
           <div class="footer-copyright">
             <div style={{"text-align": "center"}} class="container">
-            Copyright <i className="tiny material-icons">copyright</i> 2019-20 IEEE Student Branch CEC
+            Copyright <i className="tiny material-icons">copyright</i> 2019-20 IEEE Student Branch MEC
             {/* <a class="grey-text text-lighten-4 right" href="#!">More Links</a> */}
             </div>
           </div>
