@@ -2,6 +2,10 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import './IndiEvents.css'
 function IndiEvents(props){
+   let newText = props.activeitem.description.split('\n').map((item, i) => {
+      return <p key={i}>{item}</p>;
+   });
+
 
    return(
        <div className="outer">
@@ -19,7 +23,7 @@ function IndiEvents(props){
 
            <div className="top row">
                <div className="col s12 m12 l8">
-                    <img class="responsive-img" style={{"width":"100%"}} src={require('../EventImages/'+ props.activeitem.img_src +'.jpg')}/>
+                    <img class="responsive-img" style={{"width":"100%"}} src={require('../EventImages/'+ props.activeitem.img_src)}/>
                </div>
                <div className="inform col s12 m12 l4">
                     <p className="head"><i className="material-icons left">explore</i> {props.activeitem.location}</p>
@@ -30,7 +34,7 @@ function IndiEvents(props){
            <div>
 
                     <div style={{ "text-align": "center", "transition": "all 0.3s linear", "padding-right": "50px", "padding-left": "50px"}} className="heading">
-                        <h1 className="head">{props.activeitem.title}</h1>
+                        <h2 className="head">{props.activeitem.title}</h2>
                     </div>
 
            </div>
@@ -38,7 +42,7 @@ function IndiEvents(props){
            <div className="container">
 
                 <div style={{ "text-align": "justify", "padding-bottom": "100px", "padding-right": "50px", "padding-left": "50px", "color": "#777777"}} className="heading">
-                    <p>{props.activeitem.description}</p>
+                    {newText}
                 </div>
            </div>
 
