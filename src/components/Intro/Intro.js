@@ -11,7 +11,7 @@ function Intro() {
     <div id="intro">
     <div class="row" style={{"margin-bottom":"-0.36%"}}>
       <div className="col s12 m6">
-        <div class="card white">
+        <div class="card white" >
           <div class="card-content light-blue-text text-darken-4 hoverable">
             <span style={{"font-weight": "bold"}} class="card-title">Announcements...</span>
             {notifications}
