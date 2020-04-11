@@ -22,11 +22,11 @@ const sideDrawer= props=>(
         <Fade right cascade >
         <div>
         <ul>
-            <li style={drawer_elt}><Link to="/" activeStyle={{color:"white"}}>Home</Link></li>
-            <li style={drawer_elt}><Link to="/execom" activeStyle={{color:"white"}}>Execom</Link></li>
-            <li style={drawer_elt}><Link to="/achievements" activeStyle={{color:"white"}}>Achievements</Link></li>
-            <li style={drawer_elt}><Link to="/gallery" activeStyle={{color:"white"}}>Gallery</Link></li>
-            <li style={drawer_elt}><Link to="/events" activeStyle={{color:"white"}}>Events</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/" activeStyle={{color:"white"}}>Home</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/execom" activeStyle={{color:"white"}}>Execom</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/achievements" activeStyle={{color:"white"}}>Achievements</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/gallery" activeStyle={{color:"white"}}>Gallery</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/events" activeStyle={{color:"white"}}>Events</Link></li>
         </ul>
         </div>
         </Fade>
