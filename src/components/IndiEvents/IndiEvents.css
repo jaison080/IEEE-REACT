@@ -1,0 +1,26 @@
+.top{
+  padding-top: 10px;
+  padding-left: 0px;
+}
+.inform{
+  padding-top: 0%;
+  color: #777777
+}
+@media(min-width:768px){
+    .top{
+        padding-top: 79px;
+        padding-left: 90px;
+    }
+}
+@media(min-width:768px){
+    .inform{
+        padding-top: 19%;
+    }
+}
+
+.head:hover{
+  color: #01579b
+}
+.head{
+  transition: all 0.3s linear
+}
