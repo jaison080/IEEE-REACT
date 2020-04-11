@@ -2,6 +2,7 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import mec from '../MEC.jpeg'
 import sb from '../SB.jpg'
+import Fade from 'react-reveal/Fade';
 const About = () => {
   var stcard = {
     "border-radius" : "30px"
@@ -12,6 +13,7 @@ const About = () => {
   }
     return(
    <div className="row">
+     <Fade left>
       <div className="col s12 m12 l6">
          <div style={stcard} className="card light-blue darken-4">
            <div style={stimage} className="card-image">
@@ -23,6 +25,9 @@ const About = () => {
            </div>
          </div>
        </div>
+       </Fade>
+       <Fade right>
+
        <div className="col s12 m12 l6">
          <div style={stcard} className="card light-blue darken-4">
             <div style={stimage} className="card-image">
@@ -35,6 +40,7 @@ const About = () => {
            </div>
          </div>
        </div>
+       </Fade>
   </div>
     )
 }
