@@ -12,6 +12,7 @@ import Footer from './components/Footer.js'
 import Gallery from './components/Gallery.js'
 import NotFound from './components/NotFoundPage/NotFoundPage.js'
 import EventHandler from './components/EventHandler/EventHandler.js'
+import Fade from 'react-reveal/Fade';
 // import Cred from './components/IEEE-credentials/credentials.js'
 class App extends Component {
   state={
@@ -26,12 +27,14 @@ class App extends Component {
   closeToggleClickHandler= ()=>{
     this.setState({SideDrawerOpen: false}); // for closing the sidebar
   }
-  
+  ad = () =>{
+    return this.state.SideDrawerOpen;
+  }
   
   render(){
     let adrawer;  
   if(this.state.SideDrawerOpen){
-    adrawer=<SideDrawer closeClickHandler={this.closeToggleClickHandler}/>;
+    adrawer=<SideDrawer current={this.ad} closeClickHandler={this.closeToggleClickHandler}/>;
   }
   
   return (
@@ -41,8 +44,9 @@ class App extends Component {
     </div> */}
     <BrowserRouter >
      <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/>
-     
+    
      {adrawer}
+   
     
     <Switch>
         <Route exact path="/" component={Landing}/>
