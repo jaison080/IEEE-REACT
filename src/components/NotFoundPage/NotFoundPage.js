@@ -12,9 +12,9 @@ const NotFoundPage= () => {
     }, [])
     return (
       <div className="parallax-container hello center-align">
-        <div className="parallax"><img className="responsive-img" style={{"min-height": "0.01%"}} src={require("./404.png")} /></div>
+        <div className="parallax"><img className="responsive-img" style={{"minHeight": "0.01%"}} src={require("./404.png")} alt="404 Not Found" /></div>
         <div style={{ "position": "sticky", "top" : "79%" }} id="nfb">
-        <a className="waves-effect waves-light light-blue darken-4 btn notfoundbutton" id="g"><i className="material-icons left">arrow_back</i><Link to="/" style={{'color':'white'}} >Back</Link></a>
+        <a href=" " className="waves-effect waves-light light-blue darken-4 btn notfoundbutton" id="g"><i className="material-icons left">arrow_back</i><Link to="/" style={{'color':'white'}} >Back</Link></a>
         </div>
       </div>
     );
