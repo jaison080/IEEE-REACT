@@ -5,11 +5,11 @@ import sb from '../SB.jpg'
 import Fade from 'react-reveal/Fade';
 const About = () => {
   var stcard = {
-    "border-radius" : "30px"
+    "borderRadius" : "30px"
   }
   var stimage = {
-    "border-top-left-radius" : "30px",
-    "border-top-right-radius" : "30px"
+    "borderTopLeftRadius" : "30px",
+    "borderTopRightRadius" : "30px"
   }
     return(
    <div className="row">

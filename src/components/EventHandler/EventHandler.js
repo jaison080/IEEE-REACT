@@ -38,10 +38,10 @@ class EventHandler extends Component{
             <div class="row">
             <h1 className="light-blue-text text-darken-4">Events</h1>
             <ul class="pagination">
-              <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                  <li class="active light-blue darken-4"><a>Older events</a></li>
-                  <li class="waves-effect"><a href="#!"><Link to='/upcoming' >Upcoming Events</Link></a></li>
-                  <li class="waves-effect"><a href="#!"><Link to='/upcoming' ><i class="material-icons">chevron_right</i></Link></a></li>
+              <li class="disabled"><a href=" "><i class="material-icons">chevron_left</i></a></li>
+                  <li class="active light-blue darken-4"><a href=" " >Older events</a></li>
+                  <li class="waves-effect"><a href=" "><Link to='/upcoming' >Upcoming Events</Link></a></li>
+                  <li class="waves-effect"><a href=" "><Link to='/upcoming' ><i class="material-icons">chevron_right</i></Link></a></li>
              </ul>
 
               {
@@ -54,11 +54,11 @@ class EventHandler extends Component{
           <div>
             <div className="card hoverable">
               <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src={require('../EventImages/'+ item.img_src)} />
+                <img className="activator" src={require('../EventImages/'+ item.img_src)} alt="item.title" />
               </div>
               <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">{item.title}<i class="material-icons right wave-effect">expand_less</i></span>
-                <a className="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
+                <a href=" " className="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
               </div>
               <div style={{"color": "#777777"}} className="card-reveal">
                 <span className="card-title">{item.title}<i class="material-icons right">expand_more</i></span>
@@ -66,7 +66,7 @@ class EventHandler extends Component{
                 <p className="head"><i className="material-icons left">explore</i> {item.location}</p>
                 <p className="head"><i className="material-icons left">event</i> {item.date}</p>
                 <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {item.type}</p>
-                <a className="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>Read More ></a>
+                <a href=" " className="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>Read More ></a>
               </div>
             </div>
           </div>
