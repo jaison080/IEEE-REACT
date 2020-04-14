@@ -36,7 +36,7 @@ const About = () => {
              <span className="card-title">About SB</span>
            </div>
            <div className="card-content white-text">
-             <p>Blue skies and ignited minds, the student branch of IEEE at Govt. Model Engineering College, the IEEE SB MEC in professional parlance, is on a perfect take-off with a growing number of dedicated and vibrant volunteers. The SB has forged itself through thick and thin, successfully proving their mettle, over the years. Today, with a crew of 150 plus members, IEEE SB MEC stands out as one among the best of all student branches in the hub.</p>
+             <p>Fiery hearts and curious minds, the student branch of IEEE MEC SB is the perfect blend of dedicated, vibrant volunteers, along with creative and brilliant tech enthusiasts. With over 3 state-level flagship events and over a dozen tech-based and managerial events, workshops, and seminars throughout the year, the IEEE MEC Student Branch ensures that each member is able to be a part of something greater. Today, with a crew of 150 plus members, IEEE MEC SB stands tall, as one among the best student branches in the state.</p>
            </div>
          </div>
        </div>
