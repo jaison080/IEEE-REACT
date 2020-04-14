@@ -6,32 +6,32 @@ import Fade from 'react-reveal/Fade';
 
 function Intro() {
   let notifications = notification_arr.map((item, i) => {
-    return <blockquote style={{"border-left":"5px solid #01579b"}} key={notification_arr.index}>{item.content} <a className="link" href={item.link}>Link</a>>></blockquote>
+    return <blockquote style={{"borderLeft":"5px solid #01579b"}} key={notification_arr.index}>{item.content} <a className="link" href={item.link}>Link</a>>></blockquote>
   });
   return (
     <div id="intro">
-    <div class="row" style={{"margin-bottom":"-0.36%"}}>
+    <div class="row" style={{"marginBottom":"-0.36%"}}>
     <Fade left>
       <div className="col s12 m6">
 
         <div class="card white" style={{"borderRadius":"20px" }} >
-          <div class="card-content light-blue-text text-darken-4 hoverable">
-            <span style={{"font-weight": "bold"}} class="card-title">Announcements...</span>
+          <div class="card-content light-blue-text text-darken-4 hoverable" style={{"borderRadius":"20px" }}>
+            <span style={{"fontWeight": "bold"}} class="card-title">Announcements...</span>
             {notifications}
           </div>
         </div>
-     
+
       </div>
         </Fade>
       <div className="col m6 hide-on-small-only"  >
-      <img src={img2} alt="" style={{"width":"100%", "borderRadius":"20px" }}/>
+      <img src={img2} style={{"width":"100%", "borderRadius":"20px" }} alt="Announcements"/>
       </div>
-     
-     
+
+
       <div style={{"width":"100%"}} className="col s12 m12">
-        <img className="responsive-img" src={require("../../assets/kochi.jpg")} />
+        <img className="responsive-img" src={require("../../assets/kochi.jpg")} alt="Govt.model Engineering College" />
       </div>
-      
+
     </div>
     </div>
   );
