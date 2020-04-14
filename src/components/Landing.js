@@ -15,7 +15,7 @@ const Landing = props =>{
       <div className="mission"><Missionvision/></div>
       <div className="about"><About/></div>
       <div className="carousel"><Carousel/></div>
-      <div className="gallery"><Photos/></div>
+
     </div>
     </body>
   );
