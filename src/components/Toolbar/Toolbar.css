@@ -60,7 +60,7 @@
     z-index:5;
     padding: 2rem;
     padding-bottom: 2rem;
-    
+
 
 
 }
@@ -71,7 +71,7 @@
     align-items: center;
     padding: 0 1rem;
     box-shadow: none;
-    
+
 }
 
 .drawer_toggle{
@@ -96,11 +96,11 @@
     display: flex;
     position: relative;
     float: right;
-    
+
 }
 .toolbar_navigation_items li{
-    padding: 0 0.5rem;   
-     
+    padding: 0 0.5rem;
+
 }
 .toolbar_navigation_items a{
     color: #01579b;
@@ -125,7 +125,7 @@
         display: none;
         position: fixed;
     }
-    
+
     .toolbar_a{
         position: fixed;
         width: 100%;
@@ -135,9 +135,9 @@
         height: 56px;
         z-index:5;
         padding: 2px;
-        
-        
-    
-    
+
+
+
+
     }
 }

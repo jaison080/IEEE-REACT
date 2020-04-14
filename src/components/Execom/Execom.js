@@ -33,7 +33,7 @@ const Execom = () =>{
         <div style={pad} className="col s12 m6 l4">
             <div className="container">
                 <img style={{"imageOrientation": "from-image", "height": "250px", "width": "250px"}} className="circle responsive-img" src={require("./Execom_Photos/Secretary.jpg")} alt="Secretary" />
-                <h5>Anand Raj Xavier</h5>
+                <h5>Anand Raj</h5>
                 <p> Secretary</p>
             </div>
         </div>

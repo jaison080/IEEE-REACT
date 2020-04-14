@@ -22,11 +22,11 @@ const sideDrawer= props=>(
         <Fade right cascade >
         <div>
         <ul>
-            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/" activeStyle={{color:"white"}}>Home</Link></li>
-            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/execom" activeStyle={{color:"white"}}>Execom</Link></li>
-            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/achievements" activeStyle={{color:"white"}}>Achievements</Link></li>
-            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/gallery" activeStyle={{color:"white"}}>Gallery</Link></li>
-            <li onClick={props.closeClickHandler} style={drawer_elt}><Link to="/events" activeStyle={{color:"white"}}>Events</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">home</i>Home</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/execom" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">group</i>Execom</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/achievements" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">redeem</i>Achievements</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/gallery" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">insert_photo</i>Gallery</Link></li>
+            <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/events" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">event</i>Events</Link></li>
         </ul>
         </div>
         </Fade>

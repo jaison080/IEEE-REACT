@@ -58,7 +58,7 @@ class EventHandler extends Component{
               </div>
               <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">{item.title}<i class="material-icons right wave-effect">expand_less</i></span>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>View Details</a>
+                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>View Details</a>
               </div>
               <div style={{"color": "#777777"}} className="card-reveal">
                 <span className="card-title">{item.title}<i class="material-icons right">expand_more</i></span>
@@ -66,7 +66,7 @@ class EventHandler extends Component{
                 <p className="head"><i className="material-icons left">explore</i> {item.location}</p>
                 <p className="head"><i className="material-icons left">event</i> {item.date}</p>
                 <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {item.type}</p>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={() =>this.eventToggleClickHandler(item)}>Read More ></a>
+                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>Read More ></a>
               </div>
             </div>
           </div>
