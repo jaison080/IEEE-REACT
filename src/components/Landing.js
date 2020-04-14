@@ -13,7 +13,7 @@ const Landing = props =>{
       <div className="intro"><Intro/></div>
       <div className="mission"><Missionvision/></div>
       <div className="about"><About/></div>
-      <div className="gallery"><Photos/></div>
+      
     </div>
     </body>
   );
