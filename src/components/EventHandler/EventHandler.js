@@ -16,8 +16,13 @@ class EventHandler extends Component{
           date:"20 november 2019",
           location:"knowhere",
           img_src:"somesource",
-          description:"ths is fnkn f ljisnlfblihbncilbncs"
+          description:"ths is fnkn f ljisnlfblihbncilbncs",
+          upcoming:false
         },
+        current_upcoming:true,
+        color_prev:"",
+        color_upc:"active #01579b light-blue darken-4",
+
         eventitems: events,
 
       }
@@ -33,19 +38,35 @@ class EventHandler extends Component{
       }
 
       renderItems=()=>{
+
+        const { current_upcoming } = this.state;
+        const newItems = this.state.eventitems.filter(
+          objects => objects.upcoming === current_upcoming
+        );
         return (
           <div>
             <div class="row">
-            <h1 className="light-blue-text text-darken-4">Events</h1>
-            <ul class="pagination">
-              <li class="disabled"><a href=" "><i class="material-icons">chevron_left</i></a></li>
-                  <li class="active light-blue darken-4"><a href=" " >Older events</a></li>
-                  <li class="waves-effect"><a href=" "><Link to='/upcoming' >Upcoming Events</Link></a></li>
-                  <li class="waves-effect"><a href=" "><Link to='/upcoming' ><i class="material-icons">chevron_right</i></Link></a></li>
-             </ul>
+            <h1 className="light-blue-text text-darken-4 center">Events</h1>
+            <div className="row">
+              <div className="col s12 l12 m12 xl12 center">
+                <ul class="pagination center">
+                  <li class={`waves-effect large ${this.state.color_prev}`}><a href="#!" onClick={() => this.setState({current_upcoming:false, color_prev:"active #01579b light-blue darken-4",color_upc:""})} >Previous</a></li>
+                  <li class={`waves-effect large ${this.state.color_upc}`}><a href="#!"onClick={() => this.setState({current_upcoming:true, color_upc:"active #01579b light-blue darken-4",color_prev:""})} >Upcoming</a></li>
+                </ul>
+              </div>
+            </div>
+            {/*<div className="row">
+              <div className="col s6 m6 l6 " >
+                <a class={`waves-effect waves-light btn right ${this.current_upcoming ? "#01579b light-blue darken-4" : "#e0e0e0 grey lighten-2"} `} onClick={() => this.setState({current_upcoming:false})} >Previous Events</a>
+                </div>
+                <div className="col s6 m6 l6 " >
+                <a class={`waves-effect waves-light btn left ${this.current_upcoming ? "#e0e0e0 grey lighten-2" : "#01579b light-blue darken-4"} `} onClick={() => this.setState({current_upcoming: true})} >Upcoming Events</a>
+                </div>
+             
+        </div>*/}
 
               {
-                this.state.eventitems.map((item, i) => <div class="col s12 m4" key={events.id}>
+                newItems.map((item, i) => <div class="col s12 m4" key={events.id}>
 
                   <ul>
                     {
