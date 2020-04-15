@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import events from "./events.json"
+import events_upcoming from "./events_upc.json"
 //import MainPage from "../Events/Events.js"
 import IndiEvents from "../IndiEvents/IndiEvents.js"
 import 'materialize-css/dist/css/materialize.min.css';
@@ -16,8 +17,13 @@ class EventHandler extends Component{
           date:"20 november 2019",
           location:"knowhere",
           img_src:"somesource",
-          description:"ths is fnkn f ljisnlfblihbncilbncs"
+          description:"ths is fnkn f ljisnlfblihbncilbncs",
+          reg: "disabled"
         },
+        current_buffer:events_upcoming,
+        color_prev:"",
+        color_upc:"active #01579b light-blue darken-4",
+
         eventitems: events,
 
       }
@@ -33,19 +39,33 @@ class EventHandler extends Component{
       }
 
       renderItems=()=>{
+
+        const { current_upcoming } = this.state;
+        const newItems = this.state.current_buffer
         return (
           <div>
             <div class="row">
-            <h1 className="light-blue-text text-darken-4">Events</h1>
-            <ul class="pagination">
-              <li class="disabled"><a href=" "><i class="material-icons">chevron_left</i></a></li>
-                  <li class="active light-blue darken-4"><a href=" " >Older events</a></li>
-                  <li class="waves-effect"><a href=" "><Link to='/upcoming' >Upcoming Events</Link></a></li>
-                  <li class="waves-effect"><a href=" "><Link to='/upcoming' ><i class="material-icons">chevron_right</i></Link></a></li>
-             </ul>
+            <h1 className="light-blue-text text-darken-4 center">Events</h1>
+            <div className="row">
+              <div className="col s12 l12 m12 xl12 center">
+                <ul class="pagination center">
+                  <li class={`waves-effect large ${this.state.color_prev}`}><a  onClick={() => this.setState({current_buffer:events, color_prev:"active #01579b light-blue darken-4",color_upc:""})} >Previous</a></li>
+                  <li class={`waves-effect large ${this.state.color_upc}`}><a onClick={() => this.setState({current_buffer:events_upcoming, color_upc:"active #01579b light-blue darken-4",color_prev:""})} >Upcoming</a></li>
+                </ul>
+              </div>
+            </div>
+            {/*<div className="row">
+              <div className="col s6 m6 l6 " >
+                <a class={`waves-effect waves-light btn right ${this.current_upcoming ? "#01579b light-blue darken-4" : "#e0e0e0 grey lighten-2"} `} onClick={() => this.setState({current_upcoming:false})} >Previous Events</a>
+                </div>
+                <div className="col s6 m6 l6 " >
+                <a class={`waves-effect waves-light btn left ${this.current_upcoming ? "#e0e0e0 grey lighten-2" : "#01579b light-blue darken-4"} `} onClick={() => this.setState({current_upcoming: true})} >Upcoming Events</a>
+                </div>
+
+        </div>*/}
 
               {
-                this.state.eventitems.map((item, i) => <div class="col s12 m4" key={events.id}>
+                newItems.map((item, i) => <div class="col s12 m4" key={events.id}>
 
                   <ul>
                     {
@@ -58,7 +78,7 @@ class EventHandler extends Component{
               </div>
               <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">{item.title}<i class="material-icons right wave-effect">expand_less</i></span>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>View Details</a>
+                <a href="" className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>View Details</a>
               </div>
               <div style={{"color": "#777777"}} className="card-reveal">
                 <span className="card-title">{item.title}<i class="material-icons right">expand_more</i></span>
@@ -66,7 +86,7 @@ class EventHandler extends Component{
                 <p className="head"><i className="material-icons left">explore</i> {item.location}</p>
                 <p className="head"><i className="material-icons left">event</i> {item.date}</p>
                 <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {item.type}</p>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>Read More ></a>
+                <div className="center-align"><a className={`center-align btn-large ${item.reg}`} href={item.link} >Register ></a></div>
               </div>
             </div>
           </div>

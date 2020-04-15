@@ -41,9 +41,11 @@ function IndiEvents(props){
 
            <div className="container">
 
-                <div style={{ "textAlign": "justify", "paddingBottom": "100px", "paddingRight": "50px", "paddingLeft": "50px", "color": "#777777"}} className="heading">
+                <div className="center-align" style={{ "textAlign": "justify", "paddingBottom": "100px", "color": "#777777"}} className="heading">
                     {newText}
+                    <div className="center-align"><a className={`center-align btn-large ${props.activeitem.reg}`} href={props.activeitem.link} >Register ></a></div>
                 </div>
+
            </div>
 
         </div>

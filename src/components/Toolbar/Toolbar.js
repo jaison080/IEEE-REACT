@@ -2,10 +2,11 @@ import React from  'react';
 import './Toolbar.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
-import { Link, NavLink } from "react-router-dom"
+import { Link , NavLink } from "react-router-dom"
 
 
 const toolbar= props =>(
+
     <div style={{"marginBottom":"15em"}}>
      <div className="meta-nav" style={{"top": "0px", "position": "fixed", "zIndex": "5", "width": "100%"}}>
 	    	<p id="ieee-meta-a">
@@ -29,11 +30,11 @@ const toolbar= props =>(
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-                        <li><NavLink to="/execom" activeClassName="active">Execom</NavLink></li>
-                        <li><NavLink to="/achievements" activeClassName="active">Achievements</NavLink></li>
-                        <li><NavLink to="/gallery" activeClassName="active">Gallery</NavLink></li>
-                        <li><NavLink to="/events" activeClassName="active" >Events</NavLink></li>
+                        <li><NavLink to="/" exact activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Home   </NavLink></li>
+                        <li><NavLink to="/execom" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Execom</NavLink></li>
+                        <li><NavLink to="/achievements" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Achievements</NavLink></li>
+                        <li><NavLink to="/timeline" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Timeline</NavLink></li>
+                        <li><NavLink to="/events" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Events</NavLink></li>
                     </ul>
                 </div>
                 <div className="drawer_toggle">
@@ -46,3 +47,6 @@ const toolbar= props =>(
 );
 
 export default toolbar;
+/*
+activeStyle={{color:"white", borderRadius: "37px", background: "#01579b"}}
+*/

@@ -1,0 +1,24 @@
+[
+  {
+      "index":0,
+      "type":"Computer Society",
+      "title":"Linux Workshop",
+      "date":"18 Jan 2020",
+      "location":"Govt. Model Engineering College",
+      "img_src":"linux.jpg",
+      "description":"Linux is a popular Operating System, often used as an alternative to the widely used Windows. Understanding and working with LINUX stands as a criterion for many companies while seeking jobs. LINUX is also useful for programming as it's widely considered more professional.\nAnalysing the importance of familiarising with LINUX as an essential part of an engineer's skillset, IEEE MEC SB's CS Society is conducting a workshop on Linux and Debian packaging. Important topics such as Shell programming, Linux commands and file modification would be covered in the workshop. The workshop will include an introductory session, along with hands-on, interactive sessions. Different applications which run on Linux alternative to Windows would also be discussed.",
+      "reg": "light-blue darken-4 waves-effect waves-light",
+      "link":"https://materializecss.com/buttons.html"
+  },
+  {
+      "index":1,
+      "type":"General",
+      "title":"M.A.G.I.C",
+      "date":"8-9 Feb 2020",
+      "location":"Govt. Model Engineering College",
+      "img_src":"magic.jpg",
+      "description":"MEC Annual Gathering of IEEE Community (M.A.G.I.C.), the flagship event of IEEE MEC SB, is a 2 day event aimed at sparking the curiosity of students and getting them involved and interested in technology. From three different peer to peer workshops with mentors and volunteers helping participants along every step of the way to an exciting and unique overnight mini-hackathon, the event certainly guarantees a magical experience for all who attend.\nThe other highlights of the event include an array of thought-provoking and creative sessions on entrepreneurship, and out of the box thinking along with plenty of socialising and networking opportunities for the student participants.",
+      "reg": "disabled",
+      "link":" "
+  }
+]

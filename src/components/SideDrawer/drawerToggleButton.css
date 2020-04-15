@@ -9,7 +9,7 @@
 .toggle_button:focus{
     outline: none;
 }
-@media(min-width:768px){
+@media(min-width:900px){
     .toggle_button{
         display: none;
     }

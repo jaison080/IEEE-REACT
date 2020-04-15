@@ -57,10 +57,9 @@ function Landing() {
     </div>
 
     </div>
-          <div className="footer-copyright">
+          <div style={{"padding": "0px"}} className="footer-copyright">
             <div style={{"textAlign": "center"}} className="container">
-            Copyright <i className="tiny material-icons">copyright</i> 2019-20 IEEE Student Branch MEC
-            {/* <a className="grey-text text-lighten-4 right" href="#!">More Links</a> */}
+            <p>Copyright <i className="tiny material-icons">copyright</i> 2019-20 IEEE Student Branch MEC | Made with <i className="fa fa-heart red-text" ></i> by <a className="made" href="https://www.linkedin.com/in/bharath-srinivasan-671382191/">B</a> <a className="made" href="https://www.linkedin.com/in/adithyaanilkumar/" >A</a> <a className="made" href="https://www.linkedin.com/in/nikita-menon-b2248079/" >N</a>.</p>
             </div>
           </div>
         </footer>

@@ -5,6 +5,7 @@
     color: #01579b;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 
@@ -13,13 +14,14 @@
     float:right;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768) {
 .meta-nav {
     min-height: 100px;
     background: white;
     color: #01579b;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 .meta-ieee-logo {
       padding: 20px 0px 0px 0px;
@@ -47,6 +49,7 @@
 #ieee-meta-a a:hover {
     color: #01579b;
     text-decoration: underline;
+
 }
 
 .toolbar_a{
@@ -59,7 +62,8 @@
     height: 20px;
     z-index:5;
     padding: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
+    outline: 0;
 
 
 
@@ -71,18 +75,21 @@
     align-items: center;
     padding: 0 1rem;
     box-shadow: none;
+    outline: 0;
 
 }
 
 .drawer_toggle{
     align-items: center;
     margin-top: 0.5rem;
+    outline: 0;
 }
 .toolbar_logo a{
     color: #01579b;
     text-decoration: none;
     font-size: 2rem;
     margin-left: 0.5rem;
+    outline: 0;
 
 }
 .hi{
@@ -96,31 +103,40 @@
     display: flex;
     position: relative;
     float: right;
+    outline: 0;
+
 
 }
 .toolbar_navigation_items li{
     padding: 0 0.5rem;
+    outline: 0;
 
 }
 .toolbar_navigation_items a{
     color: #01579b;
     text-decoration: none;
+    border-radius: 37px;
+    outline: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+    
 }
 
 
 .toolbar_navigation_items a:hover{
     color: white;
     text-decoration: none;
+    border-radius: 37px;
     background: #01579b;
+    outline: 0;
+
 
 }
 
-.toolbar_navigation_items a:active{
-    color: white;
-    text-decoration: none;
-}
 
-@media(max-width: 768px){
+
+@media(max-width: 900px){
     .toolbar_navigation_items{
         display: none;
         position: fixed;
