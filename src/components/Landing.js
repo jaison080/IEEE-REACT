@@ -9,7 +9,6 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 const Landing = props =>{
   return (
-    <body>
     <div className="landing">
       <div className="intro"><Intro/></div>
       <div className="mission"><Missionvision/></div>
@@ -17,7 +16,6 @@ const Landing = props =>{
       <div className="carousel"><Carousel/></div>
       <div className="gallery"><Photos/></div>
     </div>
-    </body>
   );
 }
 

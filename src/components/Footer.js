@@ -4,7 +4,7 @@ import "../css/footer.css"
 function Landing() {
   return (
     <footer className="page-footer light-blue darken-4">
-          <div id="top_margin" class=" light-blue darken-4 white-text">
+          <div id="top_margin" className=" light-blue darken-4 white-text">
 
     <div className='contact container' id="centre_mobile">
       <div className="row" id="contact">
@@ -44,7 +44,7 @@ function Landing() {
             <div className="divider"></div>
             <p> IEEE Students Branch, <br/>Govt. Model Engineering College, <br/>Thrikkakara, Kochi, Kerala.<br/>PIN: 682021
             </p>
-            <p> <i className="tiny material-icons">email</i> Email: ieee@mec.ac.in</p>
+            <p className="all-copy" > <i className="tiny material-icons">email</i> Email: ieee@mec.ac.in</p>
           </div>
         </div>
 </div>
@@ -57,10 +57,10 @@ function Landing() {
     </div>
 
     </div>
-          <div class="footer-copyright">
-            <div style={{"textAlign": "center"}} class="container">
+          <div className="footer-copyright">
+            <div style={{"textAlign": "center"}} className="container">
             Copyright <i className="tiny material-icons">copyright</i> 2019-20 IEEE Student Branch MEC
-            {/* <a class="grey-text text-lighten-4 right" href="#!">More Links</a> */}
+            {/* <a className="grey-text text-lighten-4 right" href="#!">More Links</a> */}
             </div>
           </div>
         </footer>

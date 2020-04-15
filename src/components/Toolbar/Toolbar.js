@@ -2,12 +2,12 @@ import React from  'react';
 import './Toolbar.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 
 const toolbar= props =>(
     <div style={{"marginBottom":"15em"}}>
-     <div className="meta-nav" style={{"top": "0px", "position": "fixed", "z-index": "5", "width": "100%"}}>
+     <div className="meta-nav" style={{"top": "0px", "position": "fixed", "zIndex": "5", "width": "100%"}}>
 	    	<p id="ieee-meta-a">
                 <a href="https://www.ieee.org/index.html">IEEE.org</a>
                 &#160;|&#160;
@@ -29,11 +29,11 @@ const toolbar= props =>(
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><Link to="/" activeStyle={{color:"white"}}>Home</Link></li>
-                        <li><Link to="/execom" activeStyle={{color:"white"}}>Execom</Link></li>
-                        <li><Link to="/achievements" activeStyle={{color:"white"}}>Achievements</Link></li>
-                        <li><Link to="/gallery" activeStyle={{color:"white"}}>Gallery</Link></li>
-                        <li><Link to="/events" activeStyle={{color:"white"}}>Events</Link></li>
+                        <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
+                        <li><NavLink to="/execom" activeClassName="active">Execom</NavLink></li>
+                        <li><NavLink to="/achievements" activeClassName="active">Achievements</NavLink></li>
+                        <li><NavLink to="/gallery" activeClassName="active">Gallery</NavLink></li>
+                        <li><NavLink to="/events" activeClassName="active" >Events</NavLink></li>
                     </ul>
                 </div>
                 <div className="drawer_toggle">

@@ -12,7 +12,7 @@ const Missionvision = () => {
     <div style={just} className="row light-blue darken-4">
         <div className="col s12 m12 l4">
             <div className="light-blue darken-4">
-            <i style={{"padding-top":"20px"}} className="large material-icons white-text">help</i>
+            <i style={{"paddingTop":"20px"}} className="large material-icons white-text">help</i>
                 <div className="container white-text">
                     <span className="flow-text">What is IEEE?</span>
                     <p style={para}>The Institute of Electrical and Electronic Engineers (IEEE) is a global association and organization of professionals working toward the development, implementation and maintenance of technology-centered products and services.</p>

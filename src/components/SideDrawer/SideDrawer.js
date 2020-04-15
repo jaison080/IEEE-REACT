@@ -21,7 +21,7 @@ const sideDrawer= props=>(
 
         <Fade right cascade >
         <div>
-        <ul>
+        <ul classname="no-copy" >
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">home</i>Home</Link></li>
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/execom" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">group</i>Execom</Link></li>
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/achievements" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">redeem</i>Achievements</Link></li>
