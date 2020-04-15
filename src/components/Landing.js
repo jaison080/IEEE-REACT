@@ -1,5 +1,4 @@
 import React from 'react';
-import Photos from './Gallery.js';
 import Missionvision from './Missionvision.js'
 import About from './About.js'
 import Carousel from './Carousel/Carousel.js'

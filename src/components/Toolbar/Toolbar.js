@@ -2,7 +2,7 @@ import React from  'react';
 import './Toolbar.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
-import { Link , NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 const toolbar= props =>(

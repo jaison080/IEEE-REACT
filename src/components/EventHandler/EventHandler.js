@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import events from "./events.json"
 import events_upcoming from "./events_upc.json"
-//import MainPage from "../Events/Events.js"
 import IndiEvents from "../IndiEvents/IndiEvents.js"
 import 'materialize-css/dist/css/materialize.min.css';
-import { Link } from 'react-router-dom';
 
 
 class EventHandler extends Component{
