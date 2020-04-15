@@ -33,7 +33,7 @@ const toolbar= props =>(
                         <li><NavLink to="/" exact activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Home   </NavLink></li>
                         <li><NavLink to="/execom" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Execom</NavLink></li>
                         <li><NavLink to="/achievements" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Achievements</NavLink></li>
-                        <li><NavLink to="/gallery" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Gallery</NavLink></li>
+                        <li><NavLink to="/timeline" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Timeline</NavLink></li>
                         <li><NavLink to="/events" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Events</NavLink></li>
                     </ul>
                 </div>
