@@ -50,8 +50,8 @@ class EventHandler extends Component{
             <div className="row">
               <div className="col s12 l12 m12 xl12 center">
                 <ul class="pagination center">
-                  <li class={`waves-effect large ${this.state.color_prev}`}><a href="#!" onClick={() => this.setState({current_upcoming:false, color_prev:"active #01579b light-blue darken-4",color_upc:""})} >Previous</a></li>
-                  <li class={`waves-effect large ${this.state.color_upc}`}><a href="#!"onClick={() => this.setState({current_upcoming:true, color_upc:"active #01579b light-blue darken-4",color_prev:""})} >Upcoming</a></li>
+                  <li class={`waves-effect large ${this.state.color_prev}`}><a  onClick={() => this.setState({current_upcoming:false, color_prev:"active #01579b light-blue darken-4",color_upc:""})} >Previous</a></li>
+                  <li class={`waves-effect large ${this.state.color_upc}`}><a onClick={() => this.setState({current_upcoming:true, color_upc:"active #01579b light-blue darken-4",color_prev:""})} >Upcoming</a></li>
                 </ul>
               </div>
             </div>
@@ -79,7 +79,7 @@ class EventHandler extends Component{
               </div>
               <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">{item.title}<i class="material-icons right wave-effect">expand_less</i></span>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>View Details</a>
+                <a href="" className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>View Details</a>
               </div>
               <div style={{"color": "#777777"}} className="card-reveal">
                 <span className="card-title">{item.title}<i class="material-icons right">expand_more</i></span>
@@ -87,7 +87,7 @@ class EventHandler extends Component{
                 <p className="head"><i className="material-icons left">explore</i> {item.location}</p>
                 <p className="head"><i className="material-icons left">event</i> {item.date}</p>
                 <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {item.type}</p>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>Read More ></a>
+                <a href="" className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>Read More ></a>
               </div>
             </div>
           </div>
