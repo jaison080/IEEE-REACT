@@ -30,11 +30,11 @@ const toolbar= props =>(
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><NavLink to="/" exact activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Home   </NavLink></li>
-                        <li><NavLink to="/execom" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Execom</NavLink></li>
-                        <li><NavLink to="/achievements" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Achievements</NavLink></li>
-                        <li><NavLink to="/timeline" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Timeline</NavLink></li>
-                        <li><NavLink to="/events" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Events</NavLink></li>
+                        <li><NavLink to="/" exact activeStyle={{ border: "solid 2px #01579b" }}>Home   </NavLink></li>
+                        <li><NavLink to="/execom" activeStyle={{ border: "solid 2px #01579b" }}>Execom</NavLink></li>
+                        <li><NavLink to="/achievements" activeStyle={{ border: "solid 2px #01579b" }}>Achievements</NavLink></li>
+                        <li><NavLink to="/timeline" activeStyle={{ border: "solid 2px #01579b" }}>Timeline</NavLink></li>
+                        <li><NavLink to="/events" activeStyle={{ border: "solid 2px #01579b" }}>Events</NavLink></li>
                     </ul>
                 </div>
                 <div className="drawer_toggle">

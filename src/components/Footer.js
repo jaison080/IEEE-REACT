@@ -44,7 +44,7 @@ function Landing() {
             <div className="divider"></div>
             <p> IEEE Students Branch, <br/>Govt. Model Engineering College, <br/>Thrikkakara, Kochi, Kerala.<br/>PIN: 682021
             </p>
-            <p className="all-copy" > <i className="tiny material-icons">email</i> Email: ieee@mec.ac.in</p>
+            <a style={{"color": "white"}} href="mailto:ieee@mec.ac.in" > <i className="tiny material-icons">email</i> Email: ieee@mec.ac.in</a>
           </div>
         </div>
 </div>
