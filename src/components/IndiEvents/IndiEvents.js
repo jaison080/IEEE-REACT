@@ -33,7 +33,7 @@ function IndiEvents(props){
            </div>
            <div>
 
-                    <div style={{ "text-align": "center", "transition": "all 0.3s linear", "paddingRight": "50px", "paddingLeft": "50px"}} className="heading">
+                    <div style={{ "textAlign": "center", "transition": "all 0.3s linear", "paddingRight": "50px", "paddingLeft": "50px"}} className="heading">
                         <h2 className="head">{props.activeitem.title}</h2>
                     </div>
 
@@ -41,9 +41,11 @@ function IndiEvents(props){
 
            <div className="container">
 
-                <div style={{ "textAlign": "justify", "paddingBottom": "100px", "paddingRight": "50px", "paddingLeft": "50px", "color": "#777777"}} className="heading">
+                <div className="center-align heading" style={{ "textAlign": "justify", "paddingBottom": "100px", "color": "#777777"}} >
                     {newText}
+                    <div className="center-align"><a className={`center-align btn-large ${props.activeitem.reg}`} href={props.activeitem.link} >Register ></a></div>
                 </div>
+
            </div>
 
         </div>

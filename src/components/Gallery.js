@@ -14,6 +14,7 @@ const Gallery = () => {
 		<div className='gallery' id="gallery">
 			<div className="container center">
 				<h3 className='light-blue-text text-darken-3 center-align' id="bottom_margin">Gallery</h3>
+
 				<div class="row">
 			
 					<div class="col s12 m4" id="bottom_margin">
@@ -21,22 +22,25 @@ const Gallery = () => {
 						<img style={{ 'backgroundSize':'cover' , 'height':'35vh', 'margin':'auto'}} src={require("../assets/1.jpg")} alt="" className="materialboxed responsive-img mobile_space"  id="curve_border"/>
 					
 					</div>
+
 				
 				
 					<div class="col s12 m4" id="bottom_margin">
 
 						<img style={{  'backgroundSize':'cover' , 'height':'35vh', 'margin':'auto'}} src={require("../assets/8.jpg")} alt="" class="materialboxed responsive-img mobile_space"  id="curve_border"/>
 					
+
 					</div>
 				
 
 					<div class="col s12 m4">
 					
 						<img style={{ 'backgroundSize':'cover' , 'height':'35vh', 'margin':'auto'}} src={require("../assets/7.jpg")} alt="" class="materialboxed responsive-img mobile_space"  id="curve_border"/>
-					
+
 					</div>
 				
 				</div>
+
 				<div class="row">
 			
 					<div class="col s12 m4" id="bottom_margin">
@@ -53,6 +57,7 @@ const Gallery = () => {
 					<div class="col s12 m4" id="bottom_margin">
 						<img style={{ 'backgroundSize':'cover' , 'height':'35vh', 'margin':'auto'}} src={require("../assets/2.jpg")} alt="" class="materialboxed responsive-img mobile_space hidepic"  id="curve_border"/>
         
+
 					</div>
 				</div>
 

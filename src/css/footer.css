@@ -1,5 +1,5 @@
 
-  
+
   .main_img{
     width:100%;
     height:100%;
@@ -9,41 +9,41 @@
     background-size: cover;
     background-position: bottom;
   }
-  
+
   .iedc_img{
     margin-top:5em;
     background-repeat:no-repeat;
     height:100%;
     width:100%;
   }
-  
+
   #about_img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
   }
-  
+
   .card_design{
     height: 50%;
   }
-  
+
   .announcements_header{
     margin-top:1.5em;
   }
-  
+
   #bottom_margin {
     margin-bottom: 1em;
   }
-  
+
   #top_margin {
     margin-top: 2em;
     bottom: 0;
   }
-  
+
   #box_curve_bottom {
     background-color:rgb(19, 8, 49); /*rgb(159, 85, 85)*/
   }
-  
+
   #box_curve_top {
     background-color: rgb(199, 101, 101);
     padding-top: 0px;
@@ -54,11 +54,11 @@
     width: 100%;
     border-radius: 20px;
   }
-  
+
   #center_align {
     text-align: center;
   }
-  
+
   @media only screen and (max-width: 600px) {
     .announcement_header{
       font-size:20px;
@@ -71,7 +71,7 @@
       border-bottom-left-radius: 10%;
       border-bottom-right-radius: 10%;
     }
-  
+
     #box_curve_top {
       border-top-left-radius: 0%;
       border-top-right-radius: 15%;
@@ -86,10 +86,20 @@
     .margin_top_mobile {
       margin-top: 0em;
     }
-  
+
     .pos {
       align-self: start;
     }
-  
+    all-copy{
+      -webkit-user-select: all;  /* Chrome all / Safari all */
+      -moz-user-select: all;     /* Firefox all */
+      -ms-user-select: all;      /* IE 10+ */
+      user-select: all;
+    }
+
+
+
   }
-  
+  .made:hover{
+    text-decoration: underline;
+  }

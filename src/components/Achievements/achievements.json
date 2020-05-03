@@ -1,103 +1,44 @@
 [
   {
       "index":0,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":""
 
   },
   {
       "index":1,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":"somesource"
 
   },
   {
       "index":2,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":""
 
   },
   {
       "index":3,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":""
 
   },
   {
       "index":4,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":""
 
   },
   {
       "index":5,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":""
 
   },
   {
       "index":6,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
-
-  },
-  {
-      "index":7,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
-
-  },
-  {
-      "index":8,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
-
-  },
-  {
-      "index":9,
-      "type":"cs",
-      "title":"name of achievement",
-      "date":"20 november 2019",
-      "location":"knowhere",
-      "img_src":"somesource",
-      "description":"ths is fnkn f ljisnlfblihbncilbncs"        
+      "title":"name of event",
+      "img_src":""
 
   }
 ]
-

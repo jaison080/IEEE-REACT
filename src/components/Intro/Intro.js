@@ -6,17 +6,17 @@ import Fade from 'react-reveal/Fade';
 
 function Intro() {
   let notifications = notification_arr.map((item, i) => {
-    return <blockquote style={{"borderLeft":"5px solid #01579b"}} key={notification_arr.index}>{item.content} <a className="link" href={item.link}>Link</a>>></blockquote>
+    return <blockquote style={{"borderLeft":"5px solid #01579b"}} key={i}>{item.content} <a className="link" href={item.link}>Link »</a></blockquote>
   });
   return (
     <div id="intro">
-    <div class="row" style={{"marginBottom":"-0.36%"}}>
+    <div className="row" style={{"marginBottom":"-0.36%"}}>
     <Fade left>
       <div className="col s12 m6">
 
-        <div class="card white" style={{"borderRadius":"20px" }} >
-          <div class="card-content light-blue-text text-darken-4 hoverable" style={{"borderRadius":"20px" }}>
-            <span style={{"fontWeight": "bold"}} class="card-title">Announcements...</span>
+        <div className="card white" style={{"borderRadius":"20px" }} >
+          <div className="card-content light-blue-text text-darken-4 hoverable" style={{"borderRadius":"20px" }}>
+            <span style={{"fontWeight": "bold"}} className="card-title">Announcements...</span>
             {notifications}
           </div>
         </div>

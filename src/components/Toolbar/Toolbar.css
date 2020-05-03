@@ -115,19 +115,20 @@
 .toolbar_navigation_items a{
     color: #01579b;
     text-decoration: none;
-    border-radius: 37px;
+    border-radius: 20px;
     outline: 0;
     padding-left: 30px;
     padding-right: 30px;
-   
-    
+
+
 }
 
 
 .toolbar_navigation_items a:hover{
     color: white;
     text-decoration: none;
-    border-radius: 37px;
+    border-radius: 20px;
+    border: solid 2px #01579b;
     background: #01579b;
     outline: 0;
 
@@ -155,5 +156,10 @@
 
 
 
+    }
+    .active{
+      background-color: white;
+      text-decoration: underline;
+      color: #01579b;
     }
 }
