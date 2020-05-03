@@ -30,11 +30,13 @@ const toolbar= props =>(
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><NavLink to="/" exact activeStyle={{ borderBottom: "solid 3px #01579b", borderRight: "solid 3px #01579b", borderLeft: "solid 0.5px #01579b", borderTop: "solid 0.5px #01579b"}}>Home   </NavLink></li>
-                        <li><NavLink to="/execom" activeStyle={{ borderBottom: "solid 3px #01579b", borderRight: "solid 3px #01579b", borderLeft: "solid 0.5px #01579b", borderTop: "solid 0.5px #01579b"}}>Execom</NavLink></li>
-                        <li><NavLink to="/achievements" activeStyle={{ borderBottom: "solid 3px #01579b", borderRight: "solid 3px #01579b", borderLeft: "solid 0.5px #01579b", borderTop: "solid 0.5px #01579b"}}>Gallery</NavLink></li>
-                        <li><NavLink to="/timeline" activeStyle={{ borderBottom: "solid 3px #01579b", borderRight: "solid 3px #01579b", borderLeft: "solid 0.5px #01579b", borderTop: "solid 0.5px #01579b"}}>Timeline</NavLink></li>
-                        <li><NavLink to="/events" activeStyle={{ borderBottom: "solid 3px #01579b", borderRight: "solid 3px #01579b", borderLeft: "solid 0.5px #01579b", borderTop: "solid 0.5px #01579b"}} >Events</NavLink></li>
+
+                        <li><NavLink to="/" exact activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Home   </NavLink></li>
+                        <li><NavLink to="/execom" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Execom</NavLink></li>
+                        <li><NavLink to="/timeline" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Timeline</NavLink></li>
+                        <li><NavLink to="/gallery" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Gallery</NavLink></li>
+                        <li><NavLink to="/events" activeStyle={{  textDecoration: "underline", textDecorationThickness: "2px"}}>Events</NavLink></li>
+
                     </ul>
                 </div>
                 <div className="drawer_toggle">
