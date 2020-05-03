@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 function Intro() {
   let notifications = notification_arr.map((item, i) => {
-    return <blockquote style={{"borderLeft":"5px solid #01579b"}} key={i}>{item.content} <a className="link" href={item.link}>Link »</a></blockquote>
+    return <blockquote style={{"borderLeft":"5px solid #01579b"}} key={i}>{item.content} <a className="link" href={item.link}>Link</a>></blockquote>
   });
   return (
     <div id="intro">

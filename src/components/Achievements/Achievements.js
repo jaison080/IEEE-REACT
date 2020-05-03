@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import achievements from "./achievements.json";
-
+import achievements from "./achievements.json"
 
 class Achievemts extends Component {
   render() {
@@ -15,16 +14,18 @@ class Achievemts extends Component {
                 {
                 <li>
       <div class="col s12 m4">
-      <div style={{"borderRadius": "20px"}} className="card hoverable">
-      <a>
-        <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
-          <img className="activator" src={require('../main1.jpg')} alt={item.title} />
-          <div style={{"paddingBottom": "0px"}} className="card-title">
-          <span style={{"fontWeight": "bolder", "fontSize": "35px"}}>{item.title}</span>
-          <p style={{"marginBottom": "10px", "fontSize": "16px"}}>View More » </p>
+        <div class="card small">
+          <div class="card-image">
+          <img src={require("../main1.jpg")} alt="Blah" />
+                <span class="card-title">{item.title}</span>
           </div>
-        </div>
-      </a>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href=" " onClick={console.log(i)}>This is a link</a>
+          </div>
         </div>
       </div>
 
