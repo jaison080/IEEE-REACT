@@ -12,7 +12,7 @@ class EventHandler extends Component{
           index:0,
           type:"cs",
           title:"name of event",
-          date:"20//  november 2019",
+          date:"20 november 2019",
           location:"knowhere",
           img_src:"somesource",
           description:"ths is fnkn f ljisnlfblihbncilbncs",
@@ -51,16 +51,6 @@ class EventHandler extends Component{
                 </ul>
               </div>
             </div>
-            {/*<div className="row">
-              <div className="col s6 m6 l6 " >
-                <a class={`waves-effect waves-light btn right ${this.current_upcoming ? "#01579b light-blue darken-4" : "#e0e0e0 grey lighten-2"} `} onClick={() => this.setState({current_upcoming:false})} >Previous Events</a>
-                </div>
-                <div className="col s6 m6 l6 " >
-                <a class={`waves-effect waves-light btn left ${this.current_upcoming ? "#e0e0e0 grey lighten-2" : "#01579b light-blue darken-4"} `} onClick={() => this.setState({current_upcoming: true})} >Upcoming Events</a>
-                </div>
-
-        </div>*/}
-
               {
                 newItems.map((item, i) => <div class="col s12 m4" key={events.id}>
 

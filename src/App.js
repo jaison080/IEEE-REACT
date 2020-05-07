@@ -4,11 +4,11 @@ import Landing from './components/Landing.js';
 import './App.css';
 import Execom from './components/Execom/Execom.js'
 // import Contacts from  './components/Contacts/Contacts.js'
-import Timeline from './components/Timeline.js'
+import Achievements from './components/Achievements/Achievements.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
 import {HashRouter, Route, Switch} from 'react-router-dom'
 import Footer from './components/Footer.js'
-import Gallery from './components/Gallery.js'
+import Timeline from './components/Timeline.js'
 import NotFound from './components/NotFoundPage/NotFoundPage.js'
 import EventHandler from './components/EventHandler/EventHandler.js'
 // import Fade from 'react-reveal/Fade';
@@ -50,8 +50,8 @@ class App extends Component {
         <Route exact path="/" component={Landing}/>
         <Route path="/events" component={EventHandler}/>
         <Route path="/execom" component={Execom}/>
+        <Route path="/achievements" component={Achievements}/>
         <Route path="/timeline" component={Timeline}/>
-        <Route path="/gallery" component={Gallery}/>
         <Route path="*" component={NotFound} />
       </Switch>
     </HashRouter>
