@@ -27,7 +27,6 @@ class EventHandler extends Component{
       }
 
       eventToggleClickHandler = (obj) =>{
-       // this.setState({activeitem:obj, ShowIndiEvents: !ShowIndiEvents})
         this.setState((prevState)=>{
           return {ShowIndiEvents: !prevState.ShowIndiEvents,activeitem:obj};
         });
@@ -52,37 +51,30 @@ class EventHandler extends Component{
               </div>
             </div>
               {
-                newItems.map((item, i) => <div class="col s12 m4" key={events.id}>
+                newItems.map((item, i) =><div>
 
-                  <ul>
-                    {
-                    <li>
-
-          <div>
-            <div className="card hoverable">
-              <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src={require('../EventImages/'+ item.img_src)} alt="item.title" />
-              </div>
-              <div className="card-content">
-                <span className="card-title activator grey-text text-darken-4">{item.title}<i class="material-icons right wave-effect">expand_less</i></span>
-                <a href=" " className="waves-effect waves-blue btn-flat" onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>View Details</a>
-              </div>
-              <div style={{"color": "#777777"}} className="card-reveal">
-                <span className="card-title">{item.title}<i class="material-icons right">expand_more</i></span>
-                <p>{item.description.split('\n')[0]}..</p>
-                <p className="head"><i className="material-icons left">explore</i> {item.location}</p>
-                <p className="head"><i className="material-icons left">event</i> {item.date}</p>
-                <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {item.type}</p>
-                <div className="center-align"><a className={`center-align btn-large ${item.reg}`} href={item.link} >Register ></a></div>
-              </div>
+                <ul>
+                  {
+                  <li>
+        <div class="col s12 m4" key={events.id}>
+        <div style={{"borderRadius": "20px"}} className="card hoverable">
+        <a href=" " onClick={(e) =>{e.preventDefault();this.eventToggleClickHandler(item)}}>
+          <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
+            <img className="activator" src={require('../EventImages/'+ item.img_src)} alt={item.title} />
+            <div style={{"paddingBottom": "0px"}} className="card-title">
+            <span style={{"fontWeight": "bolder", "fontSize": "35px"}}>{item.title}</span>
+            <p style={{"marginBottom": "10px", "fontSize": "16px"}}>View More » </p>
             </div>
           </div>
-
-                    </li>
-                    }
-                  </ul>
-
-                </div>)
+        </a>
+          </div>
+        </div>
+  
+                  </li>
+                  }
+                </ul>
+  
+              </div>)
               }
             </div>
           </div>
