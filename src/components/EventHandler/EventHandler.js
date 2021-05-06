@@ -62,7 +62,7 @@ class EventHandler extends Component{
           <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
             <img className="activator" src={require('../EventImages/'+ item.img_src)} alt={item.title} />
             <div style={{"paddingBottom": "0px"}} className="card-title">
-            <span style={{"fontWeight": "bolder", "fontSize": "35px"}}>{item.title}</span>
+            <span className="flow-text" style={{"fontWeight": "bolder", "fontSize": "4vh"}}>{item.title}</span>
             <p style={{"marginBottom": "10px", "fontSize": "16px"}}>View More » </p>
             </div>
           </div>
