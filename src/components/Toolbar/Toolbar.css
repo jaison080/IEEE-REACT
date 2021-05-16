@@ -53,7 +53,6 @@
 }
 
 .toolbar_a{
-
     position: fixed;
     width: 100%;
     left: 0;
@@ -62,11 +61,8 @@
     height: 20px;
     z-index:5;
     padding: 2rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.7rem;
     outline: 0;
-
-
-
 }
 .toolbar_navigation{
     background-color: white;
@@ -76,7 +72,6 @@
     padding: 0 1rem;
     box-shadow: none;
     outline: 0;
-
 }
 
 .drawer_toggle{
@@ -110,32 +105,16 @@
 .toolbar_navigation_items li{
     padding: 0 0.5rem;
     outline: 0;
-
 }
 .toolbar_navigation_items a{
+    line-height:50px;
     color: #01579b;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 0px;
     outline: 0;
     padding-left: 30px;
     padding-right: 30px;
-
-
 }
-
-
-.toolbar_navigation_items a:hover{
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    border: solid 2px #01579b;
-    background: #01579b;
-    outline: 0;
-
-
-}
-
-
 
 @media(max-width: 900px){
     .toolbar_navigation_items{
@@ -148,14 +127,10 @@
         width: 100%;
         left: 0;
         top: 40px;
-        background: white;
+        background: rgb(255, 255, 255);
         height: 56px;
         z-index:5;
         padding: 2px;
-
-
-
-
     }
     .active{
       background-color: white;
