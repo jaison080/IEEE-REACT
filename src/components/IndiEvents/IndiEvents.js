@@ -1,6 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import './IndiEvents.css'
+import { NavLink } from "react-router-dom"
 function IndiEvents(props){
    let newText = props.activeitem.description.split('\n').map((item, i) => {
       return <p key={i}>{item}</p>;
@@ -9,42 +10,42 @@ function IndiEvents(props){
 
    return(
        <div className="outer">
-            <div class="light-blue-text text-darken-4 white">
+            <div class="top light-blue-text text-darken-4 white">
                 <h1 style={{"lineHeight":"74px"}}>Event Details</h1>
             </div>
-            <nav>
-                <div class="light-blue darken-4 nav-wrapper">
-                    <div class="col s12">
-                         <a href=" " onClick={props.closeHandler} style={{"cursor":"pointer"}} class="breadcrumb">Events</a>
-                         <a  href=" " class="breadcrumb">{props.activeitem.title}</a>
+            <div style={{"maxWidth": "10cm", "borderRadius": "20px"}} className="top">
+                <nav style={{"borderRadius": "20px"}}>
+                    <div style={{"borderRadius": "20px"}} className="hoverable  light-blue darken-4 nav-wrapper">
+                        <div className="center-align">
+                            <NavLink to="/events" onClick={props.closeHandler} style={{"cursor":"pointer"}} class="breadcrumb" >Events</NavLink>
+                            <a href=" " onClick={(e) =>{e.preventDefault()}} class="breadcrumb">{props.activeitem.title}</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
 
            <div className="top row">
-               <div className="col s12 m12 l8">
-                    <img class="responsive-img" style={{"width":"100%"}} src={require('../EventImages/'+ props.activeitem.img_src)} alt={props.activeitem.title} />
+               <div className="col s12 m6 l6">
+                    <img class="responsive-img hoverable" style={{"width":"100%", "borderRadius": "20px"}} src={require('../EventImages/'+ props.activeitem.img_src)} alt={props.activeitem.title} />
                </div>
-               <div className="inform col s12 m12 l4">
-                    <p className="head"><i className="material-icons left">explore</i> {props.activeitem.location}</p>
-                    <p className="head"><i className="material-icons left">event</i> {props.activeitem.date}</p>
-                    <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {props.activeitem.type}</p>
+               <div className="inform col s12 m6 l6">
+                    <div style={{"transition": "all 0.3s linear", "paddingRight": "10px", "paddingLeft": "10px", "textAlign": 'left'}} className="heading">
+                        <h2 className="head">{props.activeitem.title}</h2>
+                        <br/>
+                        <div style={{"paddingLeft":"10px"}}>
+                        <p className="head"><i className="material-icons left">explore</i> {props.activeitem.location}</p>
+                        <p className="head"><i className="material-icons left">event</i> {props.activeitem.date}</p>
+                        <p className="head"><i className="material-icons left">keyboard_arrow_right</i> {props.activeitem.type}</p>
+                        <br/>
+                        <div className="heading" style={{ "textAlign": "left", "paddingBottom": "100px", "color": "#777777"}} >
+                            {newText}
+                            {props.activeitem.reg === true? <div style={{"paddingTop": "30px"}} className="center-align"><a className="center-align btn-large light-blue darken-4 waves-effect waves-light" href={props.activeitem.link} >Register »</a></div>: null }
+                        </div>
+                    </div>
+                    </div>
                 </div>
            </div>
            <div>
-
-                    <div style={{ "textAlign": "center", "transition": "all 0.3s linear", "paddingRight": "50px", "paddingLeft": "50px"}} className="heading">
-                        <h2 className="head">{props.activeitem.title}</h2>
-                    </div>
-
-           </div>
-
-           <div className="container">
-
-                <div className="center-align heading" style={{ "textAlign": "justify", "paddingBottom": "100px", "color": "#777777"}} >
-                    {newText}
-                    <div className="center-align"><a className={`center-align btn-large ${props.activeitem.reg}`} href={props.activeitem.link} >Register ></a></div>
-                </div>
 
            </div>
 

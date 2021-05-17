@@ -16,7 +16,7 @@ class Achievemts extends Component {
                 <li>
       <div class="col s12 m4">
       <div style={{"borderRadius": "20px"}} className="card hoverable">
-      <a>
+      <a href = " " onClick={(e) => {e.preventDefault()}}>
         <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
           <img className="activator" src={require('../main1.jpg')} alt={item.title} />
           <div style={{"paddingBottom": "0px"}} className="card-title">

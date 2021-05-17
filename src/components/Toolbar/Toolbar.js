@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Toolbar.css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -108,5 +109,5 @@ const toolbar = (props) => (
 
   </div>
 );
-
+}
 export default toolbar;
