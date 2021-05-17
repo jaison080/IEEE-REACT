@@ -59,9 +59,9 @@
     left: 0;
     top: 40px;
     background: white;
-    height: 20px;
+    height: 30px;
     z-index:5;
-    padding: 2rem;
+    padding: 2.5rem;
     padding-bottom: 2.5rem;
     outline: 0;
 
@@ -87,7 +87,7 @@
 .toolbar_logo a{
     color: #01579b;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 0.5rem;
     outline: 0;
 
