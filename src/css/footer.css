@@ -32,7 +32,7 @@
   }
 
   #bottom_margin {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
   }
 
   #top_margin {
@@ -62,10 +62,10 @@
   @media only screen and (max-width: 600px) {
     .announcement_header{
       font-size:20px;
-      margin-top:30px;
+      margin-top:20px;
     }
     .message_box{
-      margin-top:0%;
+      margin-top: 2em;
     }
     #box_curve_bottom {
       border-bottom-left-radius: 10%;
@@ -102,4 +102,17 @@
   }
   .made:hover{
     text-decoration: underline;
+  }
+  #size_change{
+    font-size: 17px;
+  }
+  #upar_margin{
+    margin-top: 40px;
+  }
+  #dupar_margin{
+    margin-top: 28px;
+  }
+ 
+  #zuper_margin{
+    margin-top: 20px;
   }

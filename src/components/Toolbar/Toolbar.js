@@ -3,11 +3,16 @@ import './Toolbar.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
 import { NavLink } from "react-router-dom"
+import M from 'materialize-css'
 
 
-const toolbar= props =>(
-
-    <div style={{"marginBottom":"15em"}}>
+const toolbar= props =>{
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, {});
+      });
+    return(
+     <div style={{"marginBottom":"15em"}}>
      <div className="meta-nav" style={{"top": "0px", "position": "fixed", "zIndex": "5", "width": "100%"}}>
 	    	<p id="ieee-meta-a">
                 <a href="https://www.ieee.org/index.html">IEEE.org</a>
@@ -23,10 +28,10 @@ const toolbar= props =>(
                 </a>
             </p>
    	    </div>
-    <header className="toolbar_a">
+    <header className="toolbar_a ">
         <nav className="toolbar_navigation">
 
-            <div className="toolbar_logo"><a href="/"><img style={{"width": "200px", "paddingTop": "20px"}} className="responsive-img" src={require("../../assets/SB_logo.png")} alt="IEEE MEC SB LOGO" /></a></div>
+        <div className="toolbar_logo"><a href="/"><img style={{"width": "200px", "paddingTop": "20px"}} className="responsive-img" src={require("../../assets/SB_logo.png")} alt="IEEE MEC SB LOGO" /></a></div>
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>
@@ -43,9 +48,9 @@ const toolbar= props =>(
         </nav>
     </header>
     </div>
-
+                
 );
-
+}
 export default toolbar;
 /*
 activeStyle={{color:"white", borderRadius: "37px", background: "#01579b"}}
