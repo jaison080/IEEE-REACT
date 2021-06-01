@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mec {
   background-image: url("../AerialMEC.jpg");
   background-repeat: no-repeat;
@@ -67,3 +68,40 @@
     width:450px;
 }
 }
+=======
+.about-mec{
+    background-color: Black;
+    background-image:url("../AerialMEC.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-panel{
+    background-color:Black;
+    opacity:0.7;
+    color: white;
+    margin: 60px;
+    padding: 30px;
+    width: 80%;
+    height:600px;
+}
+.card-panel h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size:4rem;
+}
+.card-panel p{
+    line-height:2rem;
+    padding: 20px;
+    font-size:1.4rem;
+    font-weight: bolder;
+}
+.card-crater{
+    height:800px;
+    padding:50px;
+    width:80%;
+}
+/* .row .col.l6{
+    margin-left:0px;
+} */
+>>>>>>> 238b9a1d57ce70ecfe3639e7e01f9252616bba54
