@@ -39,7 +39,7 @@ class EventHandler extends Component{
 
         const newItems = this.state.current_buffer
         return (
-          <div>
+          <div  style={{ marginTop: "15em"}}>
             <div class="row">
             <h1 className="light-blue-text text-darken-4 center">Events</h1>
             <div className="row">

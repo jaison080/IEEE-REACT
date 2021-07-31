@@ -3,14 +3,14 @@ import "../css/footer.css"
 
 function Landing() {
   return (
-    <footer style={{"paddingTop": "0px"}} className="page-footer white">
+    <footer className="page-footer white">
           <div id="top_margin" className=" light-blue darken-4 white-text">
 
     <div className='container' id="centre_mobile">
       <div className="row" id="contact">
         <div className="col s12 m4 l4" id='dupar_margin'>
           <div className="section">
-          <div class="light-blue darken-4 ">
+          <div class="card light-blue darken-4 z-depth-1">
              <div class="card-content white-text">
             <img className="responsive-img" src={require("../assets/SB_logo_white.png")} alt="IEEE MEC SB LOGO" />
             <div className="divider"></div>
@@ -25,14 +25,14 @@ function Landing() {
         <div className="message_box">
         <div class="row">
     <div class="col s12 m12 l12" id='upar_margin'>
-      <div class="card light-blue darken-4 join hoverable">
+      <div class="card blue darken-2 z-depth-4">
         <div class="card-content white-text">
           <span class="card-title" id="bottom_margin"><b>Join IEEE</b></span>
           <div className="divider" ></div>
           <div style={{"paddingTop": "5px"}} className="row white-text"></div>
           <p id='size_change'>If you are interested in joining IEEE MEC SB society ,please follow the instructions in the link given below</p>
         </div>
-        <div class="card-action round">
+        <div class="card-action">
         <button class="btn waves-effect waves orange" type="Join" name="action">Join
     <i class="material-icons right">send</i>
   </button>
@@ -43,7 +43,7 @@ function Landing() {
 					</div>
 						</div>
 
-    <div class="col s12 m4 margin_top_mobile light-blue darken-4 " id='upar_margin'>
+    <div class="col s12 m4 margin_top_mobile card light-blue darken-4 z-depth-1" id='upar_margin'>
       <div class="card-content white-text">
 
     

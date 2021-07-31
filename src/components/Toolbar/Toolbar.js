@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Toolbar.css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -6,7 +5,7 @@ import DrawerToggleButton from "../SideDrawer/DrawerToggleButton.js";
 import { NavLink } from "react-router-dom";
 
 const toolbar = (props) => (
-  <div style={{ marginBottom: "15em" }}>
+  <div style={{ marginBottom: "15em", position: "fixed", zIndex: "25"}}>
     <div
       className="meta-nav"
       style={{ top: "0px", position: "fixed", zIndex: "5", width: "100%" }}
@@ -36,7 +35,7 @@ const toolbar = (props) => (
       </p>
     </div>
     <header className="toolbar_a">
-      <nav className="toolbar_navigation">
+    <nav className="toolbar_navigation">
         <div className="toolbar_logo">
           <a href="/">
             <img
@@ -48,10 +47,10 @@ const toolbar = (props) => (
           </a>
         </div>
         <div className="hi" />
-        <div className="toolbar_navigation_items">
+        <div style={{marginBottom: "-18px"}} className="toolbar_navigation_items">
           <ul>
             <li>
-              <NavLink
+              <NavLink className="waves-effect"
                 to="/"
                 exact
                 activeStyle={{ borderBottom: "solid 6px #01579b" }}
@@ -60,7 +59,7 @@ const toolbar = (props) => (
               </NavLink>
             </li>
             <li>
-              <NavLink
+              <NavLink className="waves-effect"
                 to="/execom"
                 activeStyle={{
                   borderBottom: "solid 6px #01579b",
@@ -70,7 +69,7 @@ const toolbar = (props) => (
               </NavLink>
             </li>
             <li>
-              <NavLink
+              <NavLink className="waves-effect"
                 to="/achievements"
                 activeStyle={{
                   borderBottom: "solid 6px #01579b",
@@ -80,7 +79,7 @@ const toolbar = (props) => (
               </NavLink>
             </li>
             <li>
-              <NavLink
+              <NavLink className="waves-effect"
                 to="/timeline"
                 activeStyle={{
                   borderBottom: "solid 6px #01579b",
@@ -90,7 +89,7 @@ const toolbar = (props) => (
               </NavLink>
             </li>
             <li>
-              <NavLink
+              <NavLink className="waves-effect"
                 to="/events"
                 activeStyle={{
                   borderBottom: "solid 6px #01579b",
@@ -109,5 +108,4 @@ const toolbar = (props) => (
 
   </div>
 );
-}
 export default toolbar;

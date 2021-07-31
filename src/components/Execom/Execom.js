@@ -7,7 +7,7 @@ const Execom = () =>{
     //     "font-size": "40 px"
     // }
     return(
-        <div className="center-align" >
+        <div style={{ marginTop: "15em"}} className="center-align" >
         <div className="row light-blue-text text-darken-4">
         <div>
         <div style={{ "textAlign": "center", "paddingBottom": "100px", "paddingRight": "50px", "paddingLeft": "50px"}} className="">

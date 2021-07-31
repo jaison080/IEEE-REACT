@@ -11,8 +11,8 @@ const Landing = props =>{
     <div className="landing">
       <div className="intro"><Intro/></div>
       <div className="mission"><Missionvision/></div>
-      <div className="about"><About/></div>
-      <div className="carousel"><Carousel/></div>
+      <div style={{marginTop: "-20px"}} className="about"><About/></div>
+      <div><Carousel/></div>
 
     </div>
   );

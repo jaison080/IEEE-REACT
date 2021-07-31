@@ -6,7 +6,7 @@ import Execom from './components/Execom/Execom.js'
 // import Contacts from  './components/Contacts/Contacts.js'
 import Achievements from './components/Achievements/Achievements.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
-import {HashRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Footer from './components/Footer.js'
 import Timeline from './components/Timeline.js'
 import NotFound from './components/NotFoundPage/NotFoundPage.js'
@@ -40,7 +40,7 @@ class App extends Component {
     {/* <div className="credentials">
       <Cred/>
     </div> */}
-    <HashRouter >
+    <BrowserRouter>
      <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/>
 
      {adrawer}
@@ -54,7 +54,7 @@ class App extends Component {
         <Route path="/timeline" component={Timeline}/>
         <Route path="*" component={NotFound} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
       <Footer/>
     </div>
   );

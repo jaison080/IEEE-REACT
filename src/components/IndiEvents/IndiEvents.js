@@ -9,7 +9,7 @@ function IndiEvents(props){
 
 
    return(
-       <div className="outer">
+       <div style={{ marginTop: "2.5em"}} className="outer">
             <div class="top light-blue-text text-darken-4 white">
                 <h1 style={{"lineHeight":"74px"}}>Event Details</h1>
             </div>
@@ -18,7 +18,7 @@ function IndiEvents(props){
                     <div style={{"borderRadius": "20px"}} className="hoverable  light-blue darken-4 nav-wrapper">
                         <div className="center-align">
                             <NavLink to="/events" onClick={props.closeHandler} style={{"cursor":"pointer"}} class="breadcrumb" >Events</NavLink>
-                            <a href=" " onClick={(e) =>{e.preventDefault()}} class="breadcrumb">{props.activeitem.title}</a>
+                            {props.activeitem.title.length > 25 ? <a href=" " onClick={(e) =>{e.preventDefault()}} class="breadcrumb">{props.activeitem.title.slice(0,22) + "..."}</a>: <a href=" " onClick={(e) =>{e.preventDefault()}} class="breadcrumb">{props.activeitem.title}</a>}
                         </div>
                     </div>
                 </nav>

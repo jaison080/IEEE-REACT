@@ -1,0 +1,26 @@
+[
+    {
+        "name": "x--x",
+        "desc": "This is a placeholder for adding blah blah blah stuff about societies in general"
+    },
+    {
+        "name": "IEEE Computer Society",
+        "desc":"IEEE Computer Society (sometimes abbreviated the Computer Society or CS) is a professional society of the Institute of Electrical and Electronics Engineers (IEEE). Its purpose and scope is to advance the theory, practice, and application of computer and information processing science and technology and the professional standing of its members."
+    },
+    {
+        "name": "IEEE Industry Applications Society",
+        "desc":"The Industry Applications Society, as a transnational organization, is interested in advancement of the theory and practice of electrical and electronic engineering in the development, design, manufacture and application of electrical systems, apparatus, devices and controls to the processes and equipment of industry and commerce; promotion of safe, reliable and economic installations."
+    },
+    {
+        "name": "IEEE Power and Energy Society",
+        "desc":"The IEEE Power and Energy Society (IEEE PES), formerly the IEEE Power Engineering Society, is the oldest society of the Institute of Electrical and Electronics Engineers (IEEE) focused on the scientific and engineering knowledge about electric power and energy."
+    },
+    {
+        "name": "IEEE Signal Processing Society",
+        "desc": "The IEEE Signal Processing Society is a society of the IEEE. It is also known by the acronym IEEE SPS. In the hierarchy of IEEE, the Signal Processing Society is one of close to 40 technical societies organized under the IEEE's Technical Activities Board. The IEEE Signal Processing Society is IEEE's first technical Society."
+    },
+    {
+        "name": "IEEE Women in Engineering Affinity Group",
+        "desc":"IEEE WIE is one of the world’s leaders in changing the face of engineering. Our global network connects nearly 20,000 members in over 100 countries to advance women in technology at all points in their life and career. IEEE WIE members make lifelong friendships, acquire influential mentors, and make a difference for the benefit of humanity."
+    }
+]
