@@ -1,23 +1,12 @@
-/* .notfound{
-    background-image: url(https://cdn.dribbble.com/users/2446071/screenshots/6903453/404.gif);
-    height: 100%;
-    width:  100%;
-} */
-/* 
-.hello{
-    height: 100vh;
- width: 100%;
-} */
-#nfb{
-    position: sticky;
-    top: 75%;
-    margin-left: 45%;
 
+.bgdrp{
+    background-image: url("./404.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-@media(min-width:768){
-    #nfb{
-        position: absolute;
-        top: 75%;
-        margin-left: 35%;
+@media(min-width:900px){
+    .bgdrp{
+        margin-top: 15em;
     }
 }

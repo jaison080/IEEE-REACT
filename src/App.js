@@ -11,6 +11,7 @@ import Footer from './components/Footer.js'
 import Timeline from './components/Timeline.js'
 import NotFound from './components/NotFoundPage/NotFoundPage.js'
 import EventHandler from './components/EventHandler/EventHandler.js'
+import IndiEvents from './components/EventHandler/IndiEvents'
 // import Fade from 'react-reveal/Fade';
 class App extends Component {
   state={
@@ -48,7 +49,8 @@ class App extends Component {
 
     <Switch>
         <Route exact path="/" component={Landing}/>
-        <Route path="/events" component={EventHandler}/>
+        <Route exact path="/events" component={EventHandler}/>
+        <Route exact path="/events/:type/:id" render={(props) => <IndiEvents{...props} />} />
         <Route path="/execom" component={Execom}/>
         <Route path="/achievements" component={Achievements}/>
         <Route path="/timeline" component={Timeline}/>

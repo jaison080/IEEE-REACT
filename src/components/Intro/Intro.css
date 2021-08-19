@@ -12,3 +12,13 @@
   background-position: center;
   background-size: cover;
 }
+
+path.outlogo {
+  transform-origin: bottom right;
+  transform-box: fill-box;
+  animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
+  @keyframes spin {
+    50% { transform: rotate(45deg); }
+    100% { transform: rotate(0deg); }
+  }
+}
