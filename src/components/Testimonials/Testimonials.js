@@ -1,62 +1,91 @@
-import React from  'react';
-import { useEffect } from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
-import './Testimonials.css';
+import React, { Component } from "react";
+import "./Testimonials.css";
+import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
+import M from "../../../node_modules/materialize-css/dist/js/materialize.min.js";
+// import M from "materialize-css";
 
-const Testimonials = () => {
-    useEffect(() => {
-        var car = document.querySelectorAll('.carousel');
-        M.Carousel.init(car, {
-            // fullWidth: true,
-            // indicators: true
+export default class Testimonials extends Component {
+    componentDidMount() {
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, { height: 750 });
         });
-      }, [])
-    return(
-        <div className="carousel">
-        <h3 className="center-align light-blue-text text-darken-4">Our Societies</h3>
-          <div className="carousel-item">
-            <div className="card hovarable">
-              <div className="card-image">
-                <img src={require("./Images/CS.jpeg")} alt="CS" />
-                <div className="card-content"><h5 className="light-blue-text text-darken-4">Computer Society</h5></div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="card hovarable">
-              <div className="card-image">
-                <img src={require("./Images/SPS.jpeg")} alt="SPS" />
-                <div className="grad card-content"><h6 className="light-blue-text text-darken-4">Signal Processing Society</h6></div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="card hovarable">
-              <div className="card-image">
-                <img src={require("./Images/PES.jpeg")} alt="PES" />
-                <div className="card-content"><h6 className="light-blue-text text-darken-4">Power and Energy Society</h6></div>
-              </div>
-            </div>
-          </div><div className="carousel-item">
-            <div className="card hovarable">
-              <div className="card-image">
-                <img src={require("./Images/WiE.jpeg")} alt="WIE" />
-                <div className="card-content"><h6 className="light-blue-text text-darken-4">Women in Enngineering Affinity Group</h6></div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="card hovarable">
-              <div className="card-image">
-                <img src={require("./Images/IAS.jpeg")} alt="IAS" />
-                <div className="card-content"><h6 className="light-blue-text text-darken-4">Industry Automation Society</h6></div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-    )
-}
+    }
+    render() {
+        return (
+            <div className="slider-container">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <div className="slider-window-container">
+                                <div className="slider-content-00">
+                                    <i class="fas fa-quote-right" id="quote"></i>
+                                    <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                                    </h3>
+                                </div>
+                                {/* <div className="pointer"></div> */}
+                                <div className="slider-content-01">
+                                    <div className="testimonial-image"></div>
+                                    <div className="content-details">
+                                        <h4>Nathan Abraham</h4>
+                                        <p>Secertary 2014</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-export default Testimonials;
+                        <li>
+                            <div className="slider-window-container">
+                                <div className="slider-content-00">
+                                    <i class="fas fa-quote-right" id="quote"></i>
+                                    <h3>It was one of the best experiences in my life</h3>
+                                </div>
+                                <div className="slider-content-01">
+                                    <div className="testimonial-image"></div>
+                                    <div className="content-details">
+                                        <h4>John Koshy</h4>
+                                        <p>Chairperson 2012</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div className="slider-window-container">
+                                <div className="slider-content-00">
+                                    <i class="fas fa-quote-right" id="quote"></i>
+                                    <h3>IEEE was an amazing Experience</h3>
+                                </div>
+                                <div className="slider-content-01">
+                                    <div className="testimonial-image"></div>
+                                    <div className="content-details">
+                                        <h4>Ipsum Lorem</h4>
+                                        <p>Vice Chair 2015</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="slider-window-container">
+                                <div className="slider-content-00">
+                                    <i class="fas fa-quote-right" id="quote"></i>
+                                    <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                                    </h3>
+                                </div>
+                                <div className="slider-content-01">
+                                    <div className="testimonial-image"></div>
+                                    <div className="content-details">
+                                        <h4>Lorem Ipsum</h4>
+                                        <p>Chairperson 2010</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        );
+    }
+}
