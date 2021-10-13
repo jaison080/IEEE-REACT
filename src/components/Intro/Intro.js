@@ -11,13 +11,15 @@ function Intro() {
 
   return (
     <div style={{"height": "100vh"}}id="intro">
-    <div id="inner" className="valign-wrapper backdrp row" style={{"marginBottom":"-0.36%", "height": "100vh", "backgroundImage": `url(${img2})`}}>
-    <Fade left>
-      <div className="col s12 m6">
+    <div id="inner" className="valign-wrapper backdrp ">
+      <div style={{ marginTop: "10em", width: "100%"}} className="row">
+    <Fade>
+      <div className="space col s12 m4">
 
-        <div className="card white" style={{"borderRadius":"20px" }} >
-          <div className="card-content light-blue-text text-darken-4 hoverable" style={{"borderRadius":"20px" }}>
-            <span style={{"fontWeight": "bold"}} className="card-title">Announcements...</span>
+        <div className="partial card white " style={{"borderRadius":"20px" }} >
+          <div className="card-content light-blue-text text-darken-4" style={{"borderRadius":"20px" }}>
+            <span style={{"fontWeight": "bold"}} className="card-title center-align">Announcements</span>
+            <div className="divider"></div>
             {notifications}
           </div>
         </div>
@@ -32,7 +34,7 @@ function Intro() {
       {/* <div style={{"width":"100%"}} className="col s12 m12">
         <img className="responsive-img" src={require("../../assets/kochi.jpg")} alt="Govt.model Engineering College" />
       </div> */}
-
+    </div>
     </div>
     </div>
   );

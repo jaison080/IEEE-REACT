@@ -22,5 +22,9 @@
     {
         "name": "IEEE Women in Engineering Affinity Group",
         "desc":"IEEE WIE is one of the world’s leaders in changing the face of engineering. Our global network connects nearly 20,000 members in over 100 countries to advance women in technology at all points in their life and career. IEEE WIE members make lifelong friendships, acquire influential mentors, and make a difference for the benefit of humanity."
+    },
+    {
+        "name": "IEEE SIGHT",
+        "desc":"IEEE SIGHT (Special Interest group in Humanitarian Technologies) is a global network of groups consisting of IEEE members and volunteers who identify and address local problems by applying their technical skills and partnering with their local communities."
     }
 ]

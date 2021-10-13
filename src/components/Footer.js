@@ -30,12 +30,12 @@ function Landing() {
           <span class="card-title" id="bottom_margin"><b>Join IEEE</b></span>
           <div className="divider" ></div>
           <div style={{"paddingTop": "5px"}} className="row white-text"></div>
-          <p id='size_change'>If you are interested in joining IEEE MEC SB society ,please follow the instructions in the link given below</p>
+          <p id='size_change'>If you are interested in joining IEEE or any of it's societies, please follow the instructions in the link given below</p>
         </div>
         <div class="card-action round">
-        <button class="btn waves-effect waves orange" type="Join" name="action">Join
+        <a href="https://www.ieee.org/membership/join/" target="_blank" rel="noopener noreferrer"  class="btn waves-effect waves orange" type="Join" name="action">Join
     <i class="material-icons right">send</i>
-  </button>
+  </a>
         </div>
       </div>
     </div>
