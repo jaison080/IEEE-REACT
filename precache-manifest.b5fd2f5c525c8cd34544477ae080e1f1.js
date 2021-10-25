@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f294cbbaba140e7339b548f911d6b95a",
+    "revision": "4c88d9493d371aa46aeaee2d5877c9a7",
     "url": "/IEEE-REACT/index.html"
   },
   {
-    "revision": "e0914974ca72063d0e9f",
-    "url": "/IEEE-REACT/static/css/2.eefbb0aa.chunk.css"
+    "revision": "0989a01adf4ad71f9f78",
+    "url": "/IEEE-REACT/static/css/2.58738c99.chunk.css"
   },
   {
-    "revision": "d581630d29138c326bbd",
-    "url": "/IEEE-REACT/static/css/main.726daedd.chunk.css"
+    "revision": "cf5a5c49b30dafbec013",
+    "url": "/IEEE-REACT/static/css/main.9d5a384e.chunk.css"
   },
   {
-    "revision": "e0914974ca72063d0e9f",
-    "url": "/IEEE-REACT/static/js/2.1a517577.chunk.js"
+    "revision": "0989a01adf4ad71f9f78",
+    "url": "/IEEE-REACT/static/js/2.e31bf8dc.chunk.js"
   },
   {
     "revision": "d8b4173f7a8b6c66c369ccd5944b6a3e",
-    "url": "/IEEE-REACT/static/js/2.1a517577.chunk.js.LICENSE.txt"
+    "url": "/IEEE-REACT/static/js/2.e31bf8dc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d581630d29138c326bbd",
-    "url": "/IEEE-REACT/static/js/main.3c0aac04.chunk.js"
+    "revision": "cf5a5c49b30dafbec013",
+    "url": "/IEEE-REACT/static/js/main.b48d9ccd.chunk.js"
   },
   {
     "revision": "9fa171d943c0f2665183",
@@ -120,6 +120,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/IEEE-REACT/static/media/SB_logo_white.93f50b73.png"
   },
   {
+    "revision": "c2607e6a470c4d4f784eda795ccae8ed",
+    "url": "/IEEE-REACT/static/media/SIGHT.c2607e6a.jpeg"
+  },
+  {
     "revision": "3039490ab7d5dab5f57e1e00b0f2a5f1",
     "url": "/IEEE-REACT/static/media/SPS.3039490a.jpeg"
   },
@@ -158,10 +162,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0a4b606d0d890a317b99d4e9afe5f957",
     "url": "/IEEE-REACT/static/media/gokul.0a4b606d.jpg"
-  },
-  {
-    "revision": "ab28facd6d246639270d8356df86ab2f",
-    "url": "/IEEE-REACT/static/media/hero.ab28facd.gif"
   },
   {
     "revision": "9c3b21a8cb4fd53fd78ef6ded92cbd09",
