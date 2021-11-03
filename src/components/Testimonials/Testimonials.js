@@ -333,7 +333,7 @@ class Testimonials extends Component{
           </div>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
+          <p>I am a very simple card. there are a lot of bits of information.
           I am convenient because I require little markup to use effectively.</p>
         </div>
         
