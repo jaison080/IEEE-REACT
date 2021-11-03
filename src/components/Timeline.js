@@ -7,7 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 const Timeline = () => {
   return(
-<div style={{ marginTop: "15em"}}>
+<div style={{ marginTop: "15em", background: "url('/IEEE-REACT/static/media/mec.e32ea3ad.jpeg')", backgroundPosition: "center", backgroundAttachment: "fixed"}}>
     <VerticalTimeline >
   <VerticalTimelineElement
     className="vertical-timeline-element--education"

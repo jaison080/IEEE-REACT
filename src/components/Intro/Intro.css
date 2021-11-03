@@ -11,22 +11,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: -0.36%;
-  height: 100vh;
-
-  /* filter: blur(2px); */
 }
-
-path.outlogo {
-  transform-origin: bottom right;
-  transform-box: fill-box;
-  animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
-  @keyframes spin {
-    50% { transform: rotate(45deg); }
-    100% { transform: rotate(0deg); }
-  }
-}
-
 
 .partial 
 {  
@@ -36,4 +21,32 @@ path.outlogo {
   background-color: rgb(255, 255, 255,0.05);
   border-radius: 20px;
   min-height: 45vh;
+}
+
+.trial{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./trial.JPG");
+
+}
+
+@media screen and (min-width: 600){
+  .constant-wrapper{
+    justify-content: baseline;
+    align-items: baseline;
+  }
+}
+.constant-wrapper{
+  position: absolute;
+  height: calc(100vh);
+  margin-top: 64px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  z-index: 997;
+  top: 0;
+  width: 100%;
+
 }
