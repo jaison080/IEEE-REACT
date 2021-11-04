@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/IEEE-REACT/static/css/main.9d5a384e.chunk.css",
-    "main.js": "/IEEE-REACT/static/js/main.b48d9ccd.chunk.js",
-    "main.js.map": "/IEEE-REACT/static/js/main.b48d9ccd.chunk.js.map",
+    "main.css": "/IEEE-REACT/static/css/main.d68b60c5.chunk.css",
+    "main.js": "/IEEE-REACT/static/js/main.a4876cf0.chunk.js",
+    "main.js.map": "/IEEE-REACT/static/js/main.a4876cf0.chunk.js.map",
     "runtime-main.js": "/IEEE-REACT/static/js/runtime-main.1cf62cec.js",
     "runtime-main.js.map": "/IEEE-REACT/static/js/runtime-main.1cf62cec.js.map",
-    "static/css/2.58738c99.chunk.css": "/IEEE-REACT/static/css/2.58738c99.chunk.css",
-    "static/js/2.e31bf8dc.chunk.js": "/IEEE-REACT/static/js/2.e31bf8dc.chunk.js",
-    "static/js/2.e31bf8dc.chunk.js.map": "/IEEE-REACT/static/js/2.e31bf8dc.chunk.js.map",
+    "static/css/2.c70e6972.chunk.css": "/IEEE-REACT/static/css/2.c70e6972.chunk.css",
+    "static/js/2.e8751f2a.chunk.js": "/IEEE-REACT/static/js/2.e8751f2a.chunk.js",
+    "static/js/2.e8751f2a.chunk.js.map": "/IEEE-REACT/static/js/2.e8751f2a.chunk.js.map",
     "index.html": "/IEEE-REACT/index.html",
-    "precache-manifest.b5fd2f5c525c8cd34544477ae080e1f1.js": "/IEEE-REACT/precache-manifest.b5fd2f5c525c8cd34544477ae080e1f1.js",
+    "precache-manifest.d600a51de99fb67a9c554c8e1236867c.js": "/IEEE-REACT/precache-manifest.d600a51de99fb67a9c554c8e1236867c.js",
     "service-worker.js": "/IEEE-REACT/service-worker.js",
-    "static/css/2.58738c99.chunk.css.map": "/IEEE-REACT/static/css/2.58738c99.chunk.css.map",
-    "static/css/main.9d5a384e.chunk.css.map": "/IEEE-REACT/static/css/main.9d5a384e.chunk.css.map",
-    "static/js/2.e31bf8dc.chunk.js.LICENSE.txt": "/IEEE-REACT/static/js/2.e31bf8dc.chunk.js.LICENSE.txt",
+    "static/css/2.c70e6972.chunk.css.map": "/IEEE-REACT/static/css/2.c70e6972.chunk.css.map",
+    "static/css/main.d68b60c5.chunk.css.map": "/IEEE-REACT/static/css/main.d68b60c5.chunk.css.map",
+    "static/js/2.e8751f2a.chunk.js.LICENSE.txt": "/IEEE-REACT/static/js/2.e8751f2a.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/IEEE-REACT/static/media/1.56479331.jpg",
     "static/media/3.jpg": "/IEEE-REACT/static/media/3.2ee4c113.jpg",
     "static/media/4.jpg": "/IEEE-REACT/static/media/4.4aceb0ef.jpg",
@@ -53,16 +53,17 @@
     "static/media/magic(2).jpg": "/IEEE-REACT/static/media/magic(2).20224a57.jpg",
     "static/media/magic(3).jpg": "/IEEE-REACT/static/media/magic(3).f03fc672.jpg",
     "static/media/magic.jpg": "/IEEE-REACT/static/media/magic.fe969d8a.jpg",
-    "static/media/main1.jpg": "/IEEE-REACT/static/media/main1.8254261e.jpg",
+    "static/media/main1.jpg": "/IEEE-REACT/static/media/main1.ab49d19e.jpg",
     "static/media/matlab.jpg": "/IEEE-REACT/static/media/matlab.80b563dc.jpg",
-    "static/media/Intro.css": "/IEEE-REACT/static/media/mec.e32ea3ad.jpeg",
-    "static/media/pp.jpg": "/IEEE-REACT/static/media/pp.0d8c1fa6.jpg"
+    "static/media/mec.jpeg": "/IEEE-REACT/static/media/mec.e32ea3ad.jpeg",
+    "static/media/pp.jpg": "/IEEE-REACT/static/media/pp.0d8c1fa6.jpg",
+    "static/media/trial.JPG": "/IEEE-REACT/static/media/trial.8d2e9542.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.1cf62cec.js",
-    "static/css/2.58738c99.chunk.css",
-    "static/js/2.e31bf8dc.chunk.js",
-    "static/css/main.9d5a384e.chunk.css",
-    "static/js/main.b48d9ccd.chunk.js"
+    "static/css/2.c70e6972.chunk.css",
+    "static/js/2.e8751f2a.chunk.js",
+    "static/css/main.d68b60c5.chunk.css",
+    "static/js/main.a4876cf0.chunk.js"
   ]
 }
