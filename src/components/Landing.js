@@ -13,7 +13,7 @@ const Landing = props => {
       <div className="mission"><Missionvision /></div>
       <div style={{ marginTop: "-20px" }} className="about"><About /></div>
       <div><Society/></div>
-      <div><Testimonials/></div>
+      <div style={{paddingBottom: "100px"}}><Testimonials/></div>
     </div>
   );
 }

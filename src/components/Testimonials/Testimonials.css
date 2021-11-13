@@ -6,3 +6,25 @@
 .indicator-item{
     background-color: #90a4ae!important;
 }
+
+.adjuster{
+    min-height: 400px  !important;
+}
+@media screen and (max-width: 600px) {
+    
+.adjuster{
+    min-height: 600px  !important;
+}   
+}
+.testimonial{
+    z-index: unset;
+}
+.border{
+    box-shadow: unset;
+    border: 1px solid #01579b ;
+    border-radius: 20px;
+}
+.card.medium{
+    height: unset;
+    min-height: 200px
+}

@@ -11,270 +11,101 @@ class Testimonials extends Component{
       }
       render(){
         return (
-            <div ref={Carousel => {this.Carousel = Carousel;}} className="container carousel carousel-slider center">
-              <div class="carousel-fixed-item center">
+          <div>
+            <h2 className="light-blue-text text-darken-4 center">Testimonials</h2>
+            <br/><br/>
+            <div ref={Carousel => {this.Carousel = Carousel;}} className="adjuster container carousel carousel-slider center">
+              <div class="carousel-fixed-item center"></div>
+              <div class="carousel-item white" href=" ">
+              <div className="row">
+              <div className="col s12">
+              <div class="hoverable card border medium valign-wrapper">
+                  <div class= 'row '>
+                    <div class='col s12 m4 l4 '>
+                        <div style={{padding: "20px"}}>
+                          <img style={{borderRadius: "100%", maxWidth: "70%"}} height='50%' src={require("../main1.jpg")} class="circle responsive-img" alt="" />
+                        </div>
+                    </div>
+                    <div style={{height: "100%"}} class='col s12 m8 l8 '>
+                      <div class="card-content left-align">
+                        <p>I am a very simple card. I am good at containing large bits of information.
+                        I am convenient because I require little markup to use effectively.</p><br/>
+                        <span class="left-align valign-wrapper">The name shall go here, hope this works</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
               </div>
-              <div class="carousel-item white" href="#one!">
-              <div class="row">
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
-  
               </div>
-              <div class="carousel-item white" href="#two!">
-              <div class="row">
-              <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
+              <div class="carousel-item white" href=" ">
+              <div className="row">
+              <div className="col s12">
+              <div class="hoverable card border medium valign-wrapper">
+                  <div class= 'row '>
+                    <div class='col s12 m4 l4 '>
+                        <div style={{padding: "20px"}}>
+                          <img style={{borderRadius: "100%", maxWidth: "70%"}} height='50%' src={require("../main1.jpg")} class="circle responsive-img" alt="" />
+                        </div>
+                    </div>
+                    <div style={{height: "100%"}} class='col s12 m8 l8 '>
+                      <div class="card-content left-align">
+                        <p>I am a very simple card. I am good at containing large bits of information.
+                        I am convenient because I require little markup to use effectively.</p><br/>
+                        <span class="left-align valign-wrapper">The name shall go here, hope this works</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
               </div>
-              <div class="carousel-item white" href="#three!">
-              <div class="row">
-              <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
               </div>
-              <div class="carousel-item white " href="#four!">
-              <div class="row">
-              <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. there are a lot of bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s4 m4 l4 " >
-      <div class="card small waves-effect hoverable">
-        <div class= 'row valign-wrapper'>
-          <div class='col s4'>
-        <div class="card-image">
-          <img  height='150' width="150" src={require("./Images/CS.jpeg")} class="circle" alt="" />
-          </div>
-          </div>
-          <div class='col s8'>
-            <span class="center-align">The name shall go here, hope this works
-            </span>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
+              <div class="carousel-item white" href=" ">
+              <div className="row">
+              <div className="col s12">
+              <div class="hoverable card border medium valign-wrapper">
+                  <div class= 'row '>
+                    <div class='col s12 m4 l4 '>
+                        <div style={{padding: "20px"}}>
+                          <img style={{borderRadius: "100%", maxWidth: "70%"}} height='50%' src={require("../main1.jpg")} class="circle responsive-img" alt="" />
+                        </div>
+                    </div>
+                    <div style={{height: "100%"}} class='col s12 m8 l8 '>
+                      <div class="card-content left-align">
+                        <p>I am a very simple card. I am good at containing large bits of information.
+                        I am convenient because I require little markup to use effectively.</p><br/>
+                        <span class="left-align valign-wrapper">The name shall go here, hope this works</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
               </div>
+              </div>
+              <div class="carousel-item white" href=" ">
+              <div className="row">
+              <div className="col s12">
+              <div class="hoverable card border medium valign-wrapper">
+                  <div class= 'row '>
+                    <div class='col s12 m4 l4 '>
+                        <div style={{padding: "20px"}}>
+                          <img style={{borderRadius: "100%", maxWidth: "70%"}} height='50%' src={require("../main1.jpg")} class="circle responsive-img" alt="" />
+                        </div>
+                    </div>
+                    <div style={{height: "100%"}} class='col s12 m8 l8 '>
+                      <div class="card-content left-align">
+                        <p>I am a very simple card. I am good at containing large bits of information.
+                        I am convenient because I require little markup to use effectively.</p><br/>
+                        <span class="left-align valign-wrapper">The name shall go here, hope this works</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+
             </div>
     
       )

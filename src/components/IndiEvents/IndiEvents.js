@@ -39,7 +39,7 @@ function IndiEvents(props){
                         <br/>
                         <div className="heading" style={{ "textAlign": "left", "paddingBottom": "100px", "color": "#777777"}} >
                             {newText}
-                            {props.activeitem.reg === true? <div style={{"paddingTop": "30px"}} className="center-align"><a className="center-align btn-large light-blue darken-4 waves-effect waves-light" href={props.activeitem.link} >Register »</a></div>: null }
+                            {props.activeitem.reg? <div style={{"paddingTop": "30px"}} className="center-align"><a className="center-align btn-large light-blue darken-4 waves-effect waves-light" href={props.activeitem.link} >Register »</a></div>: null }
                         </div>
                     </div>
                     </div>

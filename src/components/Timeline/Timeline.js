@@ -7,12 +7,16 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 const Timeline = () => {
   return(
-<div style={{ marginTop: "15em", background: "url('/IEEE-REACT/static/media/mec.e32ea3ad.jpeg')", backgroundPosition: "center", backgroundAttachment: "fixed"}}>
-    <VerticalTimeline >
+<div style={{background: "url('/IEEE-REACT/static/media/mec.e32ea3ad.jpeg')", backgroundPosition: "center", backgroundAttachment: "fixed"}}>
+  <div style={{height: "20em", marginTop: "9em", width: "100%", background: "transparent"}}>
+    <h1 className="light-blue-text text-darken-4" style={{textAlign: "center", paddingTop: "40px", fontWeight: "bolder",  }} >Timeline</h1>
+  </div>
+  <VerticalTimeline>
   <VerticalTimelineElement
-    className="vertical-timeline-element--education"
+    className="vertical-timeline-element--work"
     date="2011 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+    iconStyle={{ background: '#01579b', color: '#fff' }}
+    >
     <h3 className="vertical-timeline-element-title">Creative Director</h3>
     <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
     <p>
@@ -56,9 +60,9 @@ const Timeline = () => {
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    className="vertical-timeline-element--education"
+    className="vertical-timeline-element--work"
     date="April 2013"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 
   >
     <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
@@ -68,9 +72,9 @@ const Timeline = () => {
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    className="vertical-timeline-element--education"
+    className="vertical-timeline-element--work"
     date="November 2012"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 
   >
     <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
@@ -82,7 +86,7 @@ const Timeline = () => {
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     date="2002 - 2006"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 
   >
     <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
