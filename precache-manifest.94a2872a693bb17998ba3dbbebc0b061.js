@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb2cb2c719c1d4f52de769ef23a39a5c",
+    "revision": "a0e864ebe66ff7b9fcfd7ddca1a29d32",
     "url": "/IEEE-REACT/index.html"
   },
   {
-    "revision": "d88f49bae0c792e46fe5",
-    "url": "/IEEE-REACT/static/css/2.c70e6972.chunk.css"
+    "revision": "fc1525d66210a786204d",
+    "url": "/IEEE-REACT/static/css/2.e55c63d3.chunk.css"
   },
   {
-    "revision": "81531ff36d82de5e551a",
-    "url": "/IEEE-REACT/static/css/main.d68b60c5.chunk.css"
+    "revision": "fa9e228890c6b4c31393",
+    "url": "/IEEE-REACT/static/css/main.dfde6e5b.chunk.css"
   },
   {
-    "revision": "d88f49bae0c792e46fe5",
-    "url": "/IEEE-REACT/static/js/2.e8751f2a.chunk.js"
+    "revision": "fc1525d66210a786204d",
+    "url": "/IEEE-REACT/static/js/2.141b49d3.chunk.js"
   },
   {
     "revision": "d8b4173f7a8b6c66c369ccd5944b6a3e",
-    "url": "/IEEE-REACT/static/js/2.e8751f2a.chunk.js.LICENSE.txt"
+    "url": "/IEEE-REACT/static/js/2.141b49d3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "81531ff36d82de5e551a",
-    "url": "/IEEE-REACT/static/js/main.a4876cf0.chunk.js"
+    "revision": "fa9e228890c6b4c31393",
+    "url": "/IEEE-REACT/static/js/main.fd8dedf3.chunk.js"
   },
   {
     "revision": "9fa171d943c0f2665183",
