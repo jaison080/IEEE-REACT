@@ -3,16 +3,44 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import 'materialize-css/dist/css/materialize.min.css';
-
+import axios from 'axios';
+import Loader from '../PreLoader/Preloader';
+    
 
 const Timeline = () => {
+  const [timeline, setTimeline] = React.useState(null)
+  const [error, setError] = React.useState(null);
+  React.useEffect(() => {
+    axios.get('/timeline').then((data) => {
+      setTimeline(data.data)
+    }).catch((err) => {
+      setError(err)
+    })
+  }, [])
+  if(error || !timeline){
+    console.log(error);
+    return (<Loader />)
+  }
   return(
-<div style={{background: "url('/IEEE-REACT/static/media/mec.e32ea3ad.jpeg')", backgroundPosition: "center", backgroundAttachment: "fixed"}}>
+<div style={{background: "url('https://api.ieeemec.org/images/hero/mec.jpeg')", backgroundPosition: "center", backgroundAttachment: "fixed"}}>
   <div style={{height: "20em", marginTop: "9em", width: "100%", background: "transparent"}}>
     <h1 className="light-blue-text text-darken-4" style={{textAlign: "center", paddingTop: "40px", fontWeight: "bolder",  }} >Timeline</h1>
   </div>
   <VerticalTimeline>
-  <VerticalTimelineElement
+    {
+      timeline.map((item, i) => 
+      <VerticalTimelineElement  className="vertical-timeline-element--work" date={item.date} iconStyle={{ background: '#01579b', color: '#fff' }}>
+      {
+        <>
+       <h3 className="vertical-timeline-element-title">{item.title}</h3>
+       {/* <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+       <p>{item.description}</p>
+       </> 
+      }
+      </VerticalTimelineElement> 
+      )
+    }
+  {/* <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2011 - present"
     iconStyle={{ background: '#01579b', color: '#fff' }}
@@ -94,7 +122,7 @@ const Timeline = () => {
     <p>
       Creative Direction, Visual Design
     </p>
-  </VerticalTimelineElement>
+  </VerticalTimelineElement> */}
 </VerticalTimeline>
 </div>
   )

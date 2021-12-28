@@ -38,7 +38,7 @@ function IndiEvents(props){
 
            <div className="top row">
                <div className="col s12 m6 l6">
-                    <img class="responsive-img hoverable" style={{"width":"100%", "borderRadius": "20px"}} src={require('../EventImages/'+ event[props.match.params.id].img_src)} alt={event[props.match.params.id].title} />
+                    <img class="responsive-img hoverable" style={{"width":"100%", "borderRadius": "20px"}} src={`${axios.defaults.baseURL}/images/${event[props.match.params.id].img_src}`} alt={event[props.match.params.id].title} />
                </div>
                <div className="inform col s12 m6 l6">
                     <div style={{"transition": "all 0.3s linear", "paddingRight": "10px", "paddingLeft": "10px", "textAlign": 'left'}} className="heading">

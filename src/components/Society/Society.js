@@ -32,11 +32,13 @@ const Society = () => {
                 </div>
               </div>
               <div className="row">
-              <div className="col s2 m2 l2"></div>
                 <div style={{borderRadius: "50%"}} className="col s4 m4 l4 waves-effect hoverable" onClick={() => setActive(5)}>
-                  <img src={require("./Images/WiE.jpeg")} alt="Computer Society" className="circle responsive-img"/>
+                  <img src={require("./Images/embs.png")} alt="IEEE EMBS" className="circle responsive-img"/>
                 </div>
                 <div style={{borderRadius: "50%"}} className="col s4 m4 l4 waves-effect hoverable" onClick={() => setActive(6)}>
+                  <img src={require("./Images/WiE.jpeg")} alt="Computer Society" className="circle responsive-img"/>
+                </div>
+                <div style={{borderRadius: "50%"}} className="col s4 m4 l4 waves-effect hoverable" onClick={() => setActive(7)}>
                   <img src={require("./Images/SIGHT.jpeg")} alt="IEEE SIGHT" className="circle responsive-img"/>
                 </div>
               </div>

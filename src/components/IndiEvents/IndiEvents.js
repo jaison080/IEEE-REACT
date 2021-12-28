@@ -2,6 +2,7 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import './IndiEvents.css'
 import { NavLink } from "react-router-dom"
+import axios from 'axios';
 function IndiEvents(props){
    let newText = props.activeitem.description.split('\n').map((item, i) => {
       return <p key={i}>{item}</p>;
@@ -26,7 +27,7 @@ function IndiEvents(props){
 
            <div className="top row">
                <div className="col s12 m6 l6">
-                    <img class="responsive-img hoverable" style={{"width":"100%", "borderRadius": "20px"}} src={require('../EventImages/'+ props.activeitem.img_src)} alt={props.activeitem.title} />
+                    <img class="responsive-img hoverable" style={{"width":"100%", "borderRadius": "20px"}} src={`${axios.defaults.baseURL}/${props.activeitem.img_src}`} alt={props.activeitem.title} />
                </div>
                <div className="inform col s12 m6 l6">
                     <div style={{"transition": "all 0.3s linear", "paddingRight": "10px", "paddingLeft": "10px", "textAlign": 'left'}} className="heading">

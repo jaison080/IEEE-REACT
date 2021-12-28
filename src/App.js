@@ -4,7 +4,7 @@ import Landing from './components/Landing.js';
 import './App.css';
 import Execom from './components/Execom/Execom.js'
 // import Contacts from  './components/Contacts/Contacts.js'
-import Achievements from './components/Achievements/Achievements.js'
+// import Achievements from './components/Achievements/Achievements.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer.js'
@@ -51,7 +51,7 @@ class App extends Component {
             <Route exact path="/events" component={EventHandler} />
             <Route exact path="/events/:type/:id" render={(props) => <IndiEvents{...props} />} />
             <Route path="/execom" component={Execom} />
-            <Route path="/achievements" component={Achievements} />
+            {/* <Route path="/achievements" component={Achievements} /> */}
             <Route path="/timeline" component={Timeline} />
             <Route path="*" component={NotFound} />
           </Switch>

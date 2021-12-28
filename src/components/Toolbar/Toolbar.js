@@ -41,7 +41,7 @@ const toolbar = (props) => (
             <img
               style={{ width: "200px", paddingTop: "20px" }}
               className="responsive-img"
-              src={require("../../assets/SB_logo.png")}
+              src={require("../../assets/IEEE-logo-test.svg")}
               alt="IEEE MEC SB LOGO"
             />
           </a>
@@ -68,7 +68,7 @@ const toolbar = (props) => (
                 Execom
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink className="waves-effect"
                 to="/achievements"
                 activeStyle={{
@@ -77,7 +77,7 @@ const toolbar = (props) => (
               >
                 Gallery
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink className="waves-effect"
                 to="/timeline"
@@ -109,3 +109,5 @@ const toolbar = (props) => (
   </div>
 );
 export default toolbar;
+
+

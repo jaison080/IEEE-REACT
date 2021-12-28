@@ -4,6 +4,8 @@ import { NavLink, Redirect} from "react-router-dom"
 
 import axios from 'axios';
 import Loader from '../PreLoader/Preloader';
+import LazyLoad from 'react-lazyload';
+
 function EventHandler() {
     
       const [buffer, setBuffer] = React.useState({
@@ -37,30 +39,24 @@ function EventHandler() {
               </div>
             </div>
               {
-                items.map((item, i) =><div>
-
-                <ul>
+                items.map((item, i) =>
+                <LazyLoad scroll={true}>
+                <div style={{"maxHeight": "526px"}} class="col s12 m4 l4" >
                   {
-                  <li>
-        <div class="col s12 m4" key={item.id}>
-        <div style={{"borderRadius": "20px"}} className="card hoverable">
+        <div key={item.id} style={{"borderRadius": "20px"}} className="card hoverable">
         <NavLink to={`/events/${buffer.current_buffer}/${i}`}>
           <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
-            <img className="activator" src={require('../EventImages/'+ item.img_src)} alt={item.title} />
+            <img className="activator" src={`${axios.defaults.baseURL}/images/${item.img_src}`} alt={item.title} />
             <div style={{"paddingBottom": "0px"}} className="card-title">
-            <span className="flow-text" style={{"fontWeight": "bolder", "fontSize": "4vh"}}>{item.title}</span>
-            <p style={{"marginBottom": "10px", "fontSize": "16px"}}>View More » </p>
+            <span className="flow-text" style={{"fontWeight": "bolder", "fontSize": "4vh", "color": item.title_color}}>{item.title}</span>
+            <p style={{"marginBottom": "10px", "fontSize": "16px", "color": item.title_color}}>View More » </p>
             </div>
           </div>
         </NavLink>
           </div>
-        </div>
-  
-                  </li>
                   }
-                </ul>
-  
-              </div>)
+                  </div>
+                  </LazyLoad>)
               }
             </div>
           </div>

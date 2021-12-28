@@ -24,7 +24,7 @@ const sideDrawer= props=>(
         <ul classname="no-copy" >
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">home</i>Home</Link></li>
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/execom" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">group</i>Execom</Link></li>
-            <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/achievements" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">redeem</i>Achievements</Link></li>
+            {/* <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/achievements" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">redeem</i>Achievements</Link></li> */}
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/timeline" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">timeline</i>Timeline</Link></li>
             <li onClick={props.closeClickHandler} style={drawer_elt}><Link className="valign-wrapper" to="/events" activeStyle={{color:"white"}}><i style={{"paddingRight":"5px"}} className="material-icons">event</i>Events</Link></li>
         </ul>
