@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/IEEE-REACT/static/css/main.7c589e56.chunk.css",
-    "main.js": "/IEEE-REACT/static/js/main.89bdf377.chunk.js",
-    "main.js.map": "/IEEE-REACT/static/js/main.89bdf377.chunk.js.map",
+    "main.js": "/IEEE-REACT/static/js/main.c4e0290f.chunk.js",
+    "main.js.map": "/IEEE-REACT/static/js/main.c4e0290f.chunk.js.map",
     "runtime-main.js": "/IEEE-REACT/static/js/runtime-main.1cf62cec.js",
     "runtime-main.js.map": "/IEEE-REACT/static/js/runtime-main.1cf62cec.js.map",
     "static/css/2.e55c63d3.chunk.css": "/IEEE-REACT/static/css/2.e55c63d3.chunk.css",
-    "static/js/2.8eea050f.chunk.js": "/IEEE-REACT/static/js/2.8eea050f.chunk.js",
-    "static/js/2.8eea050f.chunk.js.map": "/IEEE-REACT/static/js/2.8eea050f.chunk.js.map",
+    "static/js/2.a478367f.chunk.js": "/IEEE-REACT/static/js/2.a478367f.chunk.js",
+    "static/js/2.a478367f.chunk.js.map": "/IEEE-REACT/static/js/2.a478367f.chunk.js.map",
     "index.html": "/IEEE-REACT/index.html",
-    "precache-manifest.8d526ff5567c6c9b087d577d9d298452.js": "/IEEE-REACT/precache-manifest.8d526ff5567c6c9b087d577d9d298452.js",
+    "precache-manifest.2da64f2b51232ced853f9d52c0ef9e13.js": "/IEEE-REACT/precache-manifest.2da64f2b51232ced853f9d52c0ef9e13.js",
     "service-worker.js": "/IEEE-REACT/service-worker.js",
     "static/css/2.e55c63d3.chunk.css.map": "/IEEE-REACT/static/css/2.e55c63d3.chunk.css.map",
     "static/css/main.7c589e56.chunk.css.map": "/IEEE-REACT/static/css/main.7c589e56.chunk.css.map",
-    "static/js/2.8eea050f.chunk.js.LICENSE.txt": "/IEEE-REACT/static/js/2.8eea050f.chunk.js.LICENSE.txt",
+    "static/js/2.a478367f.chunk.js.LICENSE.txt": "/IEEE-REACT/static/js/2.a478367f.chunk.js.LICENSE.txt",
     "static/media/NotFoundPage.css": "/IEEE-REACT/static/media/404.a81f369f.png",
     "static/media/CS.jpeg": "/IEEE-REACT/static/media/CS.d196213f.jpeg",
     "static/media/IAS.jpeg": "/IEEE-REACT/static/media/IAS.be2efd13.jpeg",
@@ -32,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.1cf62cec.js",
     "static/css/2.e55c63d3.chunk.css",
-    "static/js/2.8eea050f.chunk.js",
+    "static/js/2.a478367f.chunk.js",
     "static/css/main.7c589e56.chunk.css",
-    "static/js/main.89bdf377.chunk.js"
+    "static/js/main.c4e0290f.chunk.js"
   ]
 }
