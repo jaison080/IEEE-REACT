@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/IEEE-REACT/static/css/main.7c589e56.chunk.css",
-    "main.js": "/IEEE-REACT/static/js/main.0095305a.chunk.js",
-    "main.js.map": "/IEEE-REACT/static/js/main.0095305a.chunk.js.map",
+    "main.js": "/IEEE-REACT/static/js/main.89bdf377.chunk.js",
+    "main.js.map": "/IEEE-REACT/static/js/main.89bdf377.chunk.js.map",
     "runtime-main.js": "/IEEE-REACT/static/js/runtime-main.1cf62cec.js",
     "runtime-main.js.map": "/IEEE-REACT/static/js/runtime-main.1cf62cec.js.map",
     "static/css/2.e55c63d3.chunk.css": "/IEEE-REACT/static/css/2.e55c63d3.chunk.css",
     "static/js/2.8eea050f.chunk.js": "/IEEE-REACT/static/js/2.8eea050f.chunk.js",
     "static/js/2.8eea050f.chunk.js.map": "/IEEE-REACT/static/js/2.8eea050f.chunk.js.map",
     "index.html": "/IEEE-REACT/index.html",
-    "precache-manifest.48808938841ca291639f9495134d66dc.js": "/IEEE-REACT/precache-manifest.48808938841ca291639f9495134d66dc.js",
+    "precache-manifest.8d526ff5567c6c9b087d577d9d298452.js": "/IEEE-REACT/precache-manifest.8d526ff5567c6c9b087d577d9d298452.js",
     "service-worker.js": "/IEEE-REACT/service-worker.js",
     "static/css/2.e55c63d3.chunk.css.map": "/IEEE-REACT/static/css/2.e55c63d3.chunk.css.map",
     "static/css/main.7c589e56.chunk.css.map": "/IEEE-REACT/static/css/main.7c589e56.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.e55c63d3.chunk.css",
     "static/js/2.8eea050f.chunk.js",
     "static/css/main.7c589e56.chunk.css",
-    "static/js/main.0095305a.chunk.js"
+    "static/js/main.89bdf377.chunk.js"
   ]
 }
