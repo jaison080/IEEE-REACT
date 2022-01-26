@@ -1,0 +1,9 @@
+.limiter{
+    max-height: 20vw
+}
+@media only screen and (max-width: 993px) {
+    .limiter{
+        max-height: 450px;
+    }
+    
+}

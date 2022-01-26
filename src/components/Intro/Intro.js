@@ -42,25 +42,33 @@ class Intro extends Component{
       <div style={{height: "100vh"}}>
         <div ref={Slider => {this.Slider = Slider;}} className="slider fullscreen">
         <ul className="slides">
-          <li>
-            <img src={`${axios.defaults.baseURL}/images/hero/mec.jpeg`} alt="Trial"/> 
-            <div className="caption right-align">
-              <h3>MEC Front View</h3>
-              <h5 className="light grey-text text-lighten-3">Fornt view of MOdel Engineering College</h5>
+        <li>
+            <img src={`${axios.defaults.baseURL}/images/hero/mecconf.JPG`} alt="Trial"/> 
+            <div className="caption left-align">
+              <h3>MEC.Conf</h3>
+              <h5 className="light grey-text text-lighten-3">The 1<sup>st</sup>  edition of MEC's developer conference, MEC.conf</h5>
             </div>
           </li> 
-          <li>
+        <li>
             <img src={`${axios.defaults.baseURL}/images/hero/mec-aerial.jpg`} alt="Trial"/> 
+            <div className="caption right-align">
+              <h3>Govt. Model Engineering College</h3>
+              {/* <h5 className="light grey-text text-lighten-3"></h5> */}
+            </div>
+          </li>
+
+          <li>
+            <img src={`${axios.defaults.baseURL}/images/hero/magic.jpg`} alt="Trial"/> 
             <div className="caption left-align">
-              <h3>MEC Aerial</h3>
-              <h5 className="light grey-text text-lighten-3">Aerial view of MEC showing it's layout structure that have a resemblance of that of aryabhatta satellite</h5>
+              <h3>M.A.G.I.C</h3>
+              <h5 className="light grey-text text-lighten-3">The 1<sup>st</sup> edition of MEC Annual Gathering of IEEE Community</h5>
             </div>
           </li>
           <li>
-            <img src={`${axios.defaults.baseURL}/images/hero/magic.jpg`} alt="Trial"/> 
+            <img src={`${axios.defaults.baseURL}/images/hero/empneo.jpg`} alt="Trial"/> 
             <div className="caption right-align">
-              <h3>M.A.G.I.C</h3>
-              <h5 className="light grey-text text-lighten-3">The first edition of MEC Annual Gathering of IEEE Community</h5>
+              <h3>Empneo 2.0</h3>
+              <h5 className="light grey-text text-lighten-3">The 2<sup>nd</sup> edition IEEE MEC SB's annual flagship event Empneo.</h5>
             </div>
           </li>
         </ul>

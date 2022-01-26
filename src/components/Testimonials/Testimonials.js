@@ -30,7 +30,7 @@ class Testimonials extends Component{
                       {item["body"].split("\n").map((item, i) => {
                         return <p key={i}>{item}<br/></p>;
                       })}<br/>
-                      <span className="left-align valign-wrapper"><b>{item["name"]} - {item["designation"]}</b></span>
+                      <span className="left-align valign-wrapper"><b>{item["name"]}<br/> {item["designation"]}</b></span>
                     </div>
                   </div>
                 </div>
@@ -41,10 +41,10 @@ class Testimonials extends Component{
           )
         });
         return (
-          <div>
+          <div style={{visibility: "inherit"}}>
             <h2 className="light-blue-text text-darken-4 center">Testimonials</h2>
             <br/><br/>
-            <div ref={Carousel => {this.Carousel = Carousel;}} className="adjuster container carousel carousel-slider center">
+            <div style={{visibility: "inherit"}} ref={Carousel => {this.Carousel = Carousel;}} className="adjuster container carousel carousel-slider center">
               <div className="carousel-fixed-item center"></div>
               {content}
             </div>

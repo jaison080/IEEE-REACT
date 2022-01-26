@@ -1,7 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import { NavLink, Redirect} from "react-router-dom"
-
+import './EventHandler.css'
 import axios from 'axios';
 import Loader from '../PreLoader/Preloader';
 import LazyLoad from 'react-lazyload';
@@ -10,7 +10,7 @@ function EventHandler() {
     
       const [buffer, setBuffer] = React.useState({
         current_buffer:"upcoming",
-        color_prev:"",
+        color_prev:"",  
         color_upc:"active #01579b light-blue darken-4",
         type: 0,
       });
@@ -25,6 +25,24 @@ function EventHandler() {
       }, [buffer]);
       if(error) return <Redirect to="/404" />
       if (!items) return (<Loader/>);
+      let event = items.map((item, i) =>
+      <div class="col s12 m12 l4" >
+        <LazyLoad>
+          {
+            <div key={item.id} style={{"borderRadius": "20px"}} className="card hoverable">
+              <NavLink to={`/events/${buffer.current_buffer}/${i}`}>
+                <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
+                  <img  className="activator limiter" src={`${axios.defaults.baseURL}/images/${item.img_src}`} alt={item.title} />
+                  <div style={{"paddingBottom": "0px"}} className="card-title">
+                  <span className="flow-text" style={{"fontWeight": "bolder", "fontSize": "4vh", "color": item.title_color}}>{item.title}</span>
+                  <p style={{"marginBottom": "10px", "fontSize": "16px", "color": item.title_color}}>View More » </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+          }
+        </LazyLoad>
+        </div>) 
       return (
         <div className="app">
         <div  style={{ marginTop: "15em"}}>
@@ -38,26 +56,7 @@ function EventHandler() {
                 </ul>
               </div>
             </div>
-              {
-                items.map((item, i) =>
-                <LazyLoad scroll={true}>
-                <div style={{"maxHeight": "526px"}} class="col s12 m4 l4" >
-                  {
-        <div key={item.id} style={{"borderRadius": "20px"}} className="card hoverable">
-        <NavLink to={`/events/${buffer.current_buffer}/${i}`}>
-          <div style={{"borderRadius": "20px"}} className="card-image waves-effect waves-block waves-light">
-            <img className="activator" src={`${axios.defaults.baseURL}/images/${item.img_src}`} alt={item.title} />
-            <div style={{"paddingBottom": "0px"}} className="card-title">
-            <span className="flow-text" style={{"fontWeight": "bolder", "fontSize": "4vh", "color": item.title_color}}>{item.title}</span>
-            <p style={{"marginBottom": "10px", "fontSize": "16px", "color": item.title_color}}>View More » </p>
-            </div>
-          </div>
-        </NavLink>
-          </div>
-                  }
-                  </div>
-                  </LazyLoad>)
-              }
+            {items.length === 0?<div style={{"minHeight": "50vh", "width": "100%"}} className='valign-wrapper'><h1 style={{"textAlign": "center", "color": "#01579b", "width": "100%"}}>Coming Soon...</h1></div> : event }
             </div>
           </div>
         </div>

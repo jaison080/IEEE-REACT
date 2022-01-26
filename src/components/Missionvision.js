@@ -15,7 +15,7 @@ const Missionvision = () => {
             <i style={{"paddingTop":"20px"}} className="large material-icons white-text">help</i>
                 <div className="container white-text">
                     <span className="flow-text">What is IEEE?</span>
-                    <p style={para}>The Institute of Electrical and Electronic Engineers (IEEE) is a global association and organization of professionals working toward the development, implementation and maintenance of technology-centered products and services.</p>
+                    <p style={para}>IEEE is one of the world’s largest technical professional organizations dedicated to advancing technology for the benefit of humanity. The IEEE provides learning opportunities within the engineering sciences, research, and technology.</p>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@ const Missionvision = () => {
                 <i style={{"paddingTop":"20px"}} className="large material-icons white-text">visibility</i>
                 <div className="container white-text">
                     <span className="flow-text">Vision</span>
-                    <p style={para}>The IEEE SB MEC takes forward the vision of IEEE by providing students a platform to enhance their technical and professional acumen.  It aims to promote interest in cutting-edge technologies </p>
+                    <p style={para}>IEEE will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.</p>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ const Missionvision = () => {
                 <i style={{"paddingTop":"20px"}} className="large material-icons white-text">room</i>
                 <div className="container white-text">
                     <span className="flow-text">Mission</span>
-                    <p style={para}>The IEEE SB MEC takes forward the vision of IEEE by providing students a platform to enhance their technical and professional acumen.  It aims to promote interest in cutting-edge technologies </p>
+                    <p style={para}>IEEE’s core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,8 @@
+/* 825 */
+@media (max-width: 825px) {
+.testimonials{
+    visibility: hidden !important;
+    display: none;
+    clear: both;
+}
+}

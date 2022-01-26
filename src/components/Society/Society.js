@@ -47,7 +47,7 @@ const Society = () => {
               <div style={{"transition": "all 0.3s linear", "paddingRight": "10px", "paddingLeft": "20px", "textAlign": 'center'}} className="heading">
                           <h3 className="head">{info[active].name}</h3>
                           <br/>
-                          <div className="flowtext" style={{ "textAlign": "left", "paddingBottom": "100px", "color": "#777777"}} >{info[active].desc}</div>
+                          <div className="flow-text" style={{ "textAlign": "left", "paddingBottom": "100px", "color": "#777777"}} >{info[active].desc}</div>
               </div>
             </div>
         </div>

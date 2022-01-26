@@ -62,7 +62,7 @@ function Landing() {
           <div className="row margin_top_mobile">
             <h4 id="bottom_margin">Contact Us</h4>
             <div className="divider"></div>
-            <p id='zuper_margin'> IEEE Students Branch, <br/>Govt. Model Engineering College, <br/>Thrikkakara, Kochi, Kerala.<br/>PIN: 682021
+            <p id='zuper_margin'> IEEE Student Branch, <br/>Govt. Model Engineering College, <br/>Thrikkakara, Kochi, Kerala.<br/>PIN: 682021
             </p>
             <a style={{"color": "white"}} href="mailto:ieee@mec.ac.in" > <i className="tiny material-icons">email</i> Email: ieee@mec.ac.in</a>
             </div>
@@ -83,7 +83,7 @@ function Landing() {
     </div>
           <div style={{"padding": "0px"}} className="footer-copyright light-blue darken-4">
             <div style={{"textAlign": "center"}} className="container  white-text ">
-            <p>Copyright <i className="tiny material-icons" >copyright</i> 2019-20 IEEE Student Branch MEC</p>
+            <p>Copyright <i className="tiny material-icons" >copyright</i> 2022 IEEE Student Branch MEC</p>
             </div>
           </div>
         </footer>
