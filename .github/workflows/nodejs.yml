@@ -33,10 +33,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Git user identity
-      run: |
-        git config --global user.name milkbreadzee
-        git config --global user.email riaelisabeths@gmail.com
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
