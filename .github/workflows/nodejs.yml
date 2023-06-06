@@ -35,8 +35,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set Git user
       run: |
-        git config user.email "riaelisabeths@gmail.com"
-        git config user.name "milkbreadzee"
+        git config --global user.email "riaelisabeths@gmail.com"
+        git config --global user.name "milkbreadzee"
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
