@@ -39,3 +39,9 @@ body{
     background-image: url("../../assets/parallax.jpg");
     background-attachment: fixed;
 } */
+
+.testcssforemptycommit{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
